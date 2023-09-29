@@ -289,3 +289,5 @@ wcwidth==0.2.6
     # via
     #   -r base.txt
     #   prompt-toolkit
+whitenoise==6.5.0
+    # via -r prod.in
