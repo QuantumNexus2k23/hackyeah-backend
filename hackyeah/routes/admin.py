@@ -1,6 +1,13 @@
 from django.contrib import admin
 
-from hackyeah.routes.models import City, Hero, Paragraph, Route, RoutePoint
+from hackyeah.routes.models import (
+    City,
+    Hero,
+    Paragraph,
+    Route,
+    RoutePoint,
+    RoutePointVisit,
+)
 from hackyeah.routes.services import PointGeocodingService
 
 
@@ -48,4 +55,9 @@ class ParagraphAdmin(admin.ModelAdmin):
 
 @admin.register(Hero)
 class HeroAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(RoutePointVisit)
+class RoutePointVisitAdmin(admin.ModelAdmin):
     pass

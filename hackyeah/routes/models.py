@@ -111,3 +111,22 @@ class Paragraph(models.Model):
 
     def __str__(self):
         return f"{self.route_point.name} - {self.order}"
+
+
+class RoutePointVisit(models.Model):
+    route_point = models.ForeignKey(
+        RoutePoint, related_name="visited", on_delete=models.CASCADE
+    )
+    user = models.ForeignKey(
+        "accounts.CustomUser",
+        related_name="visited_route_points",
+        on_delete=models.CASCADE,
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ("route_point", "user")
+        ordering = ("created_at",)
+
+    def __str__(self):
+        return f"{self.route_point.name} (user: {self.user_id})"

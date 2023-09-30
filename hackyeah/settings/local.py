@@ -15,3 +15,9 @@ DATABASES = {
         "PORT": env("POSTGRES_PORT", "5432"),
     }
 }
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework.authentication.SessionAuthentication",
+    ),
+}
