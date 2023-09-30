@@ -1,0 +1,64 @@
+- model: routes.hero
+  pk: 1
+  fields:
+    name: Athena
+    image: route_points/audio/2023/09/30/atena.png
+- model: routes.route
+  pk: 4
+  fields:
+    city: 1
+    name: Athena's journey
+    description: Athena's journey
+    image: route/images/2023/09/30/1.png
+    duration: 01:00:00
+    route_type: historical
+    hero: 1
+- model: routes.routepoint
+  pk: 4
+  fields:
+    name: Starting Point
+    longitude: '19.932848'
+    latitude: '50.054112'
+    short_description: Starting point
+    google_maps_url: https://www.google.com/maps/place/Zamek+Kr%C3%B3lewski+na+Wawelu/@50.0541115,19.9328481,17z/data=!3m1!4b1!4m6!3m5!1s0x47165b6d053619f5:0xacb9dfc4d67fa598!8m2!3d50.0541115!4d19.935423!16s%2Fm%2F0cp08lw?entry=ttu
+    route: 4
+    order: 1
+    description: Miejsce gdzie zaczynamy
+    hero_story: Her story related to the castle or not. Her story related to the castle
+      or not.Her story related to the castle or not.Her story related to the castle
+      or not.Her story related to the castle or not.Her story related to the castle
+      or not.Her story related to the castle or not.Her story related to the castle
+      or not.
+    hero_quote: Come and hear my story!
+    main_image: route_points/images/2023/09/30/p1.png
+    audio: ''
+- model: routes.paragraph
+  pk: 1
+  fields:
+    order: 2
+    route_point: 4
+    text: The castle is part of a fortified architectural complex erected atop a limestone
+      outcrop on the left bank of the Vistula River, at an altitude of 228 metres
+      above sea level.[3][4] The complex consists of numerous buildings of great historical
+      and national importance, including the Wawel Cathedral where Polish monarchs
+      were crowned and buried. Some of Wawel's oldest stone buildings can be traced
+      back to 970 AD, in addition to the earliest examples of Romanesque and Gothic
+      architecture in Poland.[5][6] The current castle was built in the 14th century,
+      and expanded over the next hundreds of years. In 1978 Wawel was declared the
+      first World Heritage Site as part of the Historic Centre of Kraków.
+    image: route_points/audio/2023/09/30/parag2.png
+    image_description: 'Podpis: tutaj jest taka rzecz2'
+- model: routes.paragraph
+  pk: 2
+  fields:
+    order: 1
+    route_point: 4
+    text: 'The Wawel Royal Castle (Polish pronunciation: [ˈvavɛl]; Zamek Królewski
+      na Wawelu) and the Wawel Hill on which it sits constitute the most historically
+      and culturally significant site in Poland. A fortified residency on the Vistula
+      River in Kraków, it was established on the orders of King Casimir III the Great[2]
+      and enlarged over the centuries into a number of structures around an Italian-styled
+      courtyard. It represents nearly all European architectural styles of the Medieval,
+      Renaissance and Baroque periods.'
+    image: route_points/audio/2023/09/30/parag1.png
+    image_description: 'Podpis: tutaj jest taka rzecz1'

@@ -56,6 +56,9 @@ class BasePoint(models.Model):
     def __str__(self):
         return f"{self.name} ({self.latitude}, {self.longitude})"
 
+    class Meta:
+        abstract = True
+
     def update_with_geocoded_place(
         self, geocoded_place: GeocodedPlace, save=True
     ) -> None:
