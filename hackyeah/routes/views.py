@@ -10,6 +10,11 @@ class RoutesModelViewSet(ReadOnlyModelViewSet):
     filterset_fields = ("city_id",)
 
 
+class RoutePointModelViewSet(ReadOnlyModelViewSet):
+    serializer_class = RoutePointSerializer
+    queryset = RoutePoint.objects.all()
+
+
 class CityModelViewSet(ReadOnlyModelViewSet):
     serializer_class = CitySerializer
     queryset = City.objects.all()
