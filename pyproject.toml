@@ -31,3 +31,37 @@ norecursedirs = ["deployment*",
                  "settings/*",
 ]
 addopts = "--nomigrations"
+
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py310, flake8, black, isort, mypy
+skipsdist = True
+
+[gh-actions]
+python =
+    3.10: py310
+
+[testenv:flake8]
+basepython = python
+deps = flake8
+commands = flake8 --format=default hackyeah
+
+[testenv:black]
+deps = black
+commands = black --check hackyeah
+
+[testenv:isort]
+deps = isort
+commands = isort --check hackyeah
+
+[testenv:mypy]
+deps = -r requirements/dev.txt
+commands = mypy hackyeah
+
+[testenv]
+setenv = PYTHONPATH = {toxinidir}
+deps = -r requirements/dev.txt
+commands = pytest hackyeah
+"""
