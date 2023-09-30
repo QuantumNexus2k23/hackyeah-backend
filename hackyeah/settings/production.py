@@ -1,12 +1,13 @@
-
-
 from .base import *
+import dj_database_url
 
 DEBUG = False
 
 ALLOWED_HOSTS = env.list("DJANGO_ALLOWED_HOSTS", ["*"])
 
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
+MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
 
 # ------------- LOGGING -------------
 LOGGING = {
@@ -34,15 +35,7 @@ LOGGING = {
 }
 
 # ------------- DATABASES -------------
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": env("POSTGRES_DB", "postgres"),
-        "USER": env("POSTGRES_USER", "postgres"),
-        "PASSWORD": env("POSTGRES_PASSWORD", ""),
-        "HOST": env("POSTGRES_HOST", "localhost"),
-    }
-}
+DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
 # ------------- STATIC -------------
 STATIC_ROOT = BASE_DIR.parent.joinpath("public")

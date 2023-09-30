@@ -71,9 +71,12 @@ defusedxml==0.8.0rc1
     #   -r base.txt
     #   python3-openid
     #   social-auth-core
+dj-database-url==2.1.0
+    # via -r prod.in
 django==4.2.5
     # via
     #   -r base.txt
+    #   dj-database-url
     #   django-admin-display
     #   django-debug-toolbar
     #   django-extensions
@@ -262,6 +265,7 @@ typing-extensions==4.8.0
     # via
     #   -r base.txt
     #   asgiref
+    #   dj-database-url
 tzdata==2023.3
     # via
     #   -r base.txt
@@ -285,3 +289,5 @@ wcwidth==0.2.6
     # via
     #   -r base.txt
     #   prompt-toolkit
+whitenoise==6.5.0
+    # via -r prod.in
