@@ -15,15 +15,16 @@ schema_view = get_schema_view(
     permission_classes=(permissions.AllowAny,),
 )
 
-router = DefaultRouter()
+# router = DefaultRouter()
 
 api_urls = [
     path("accounts/", include("hackyeah.accounts.urls")),
+    path("routes/", include("hackyeah.routes.urls")),
 ]
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/", include(router.urls)),
+    # path("api/", include(router.urls)),
     path(
         "api/doc/", schema_view.with_ui("redoc", cache_timeout=0), name="schema-redoc"
     ),
