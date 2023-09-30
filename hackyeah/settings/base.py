@@ -52,6 +52,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # ------------- MIDDLEWARES -------------
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.common.CommonMiddleware",

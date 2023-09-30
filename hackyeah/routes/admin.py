@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from hackyeah.routes.models import Route, RoutePoint
+from hackyeah.routes.models import City, Hero, Paragraph, Route, RoutePoint
 from hackyeah.routes.services import PointGeocodingService
 
 
@@ -32,5 +32,20 @@ class RoutePointInline(admin.TabularInline):
 
 @admin.register(Route)
 class RouteAdmin(admin.ModelAdmin):
-    fields = ("name", "description")
+    list_display = ("name", "description")
     inlines = (RoutePointInline,)
+
+
+@admin.register(City)
+class CityAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Paragraph)
+class ParagraphAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Hero)
+class HeroAdmin(admin.ModelAdmin):
+    pass

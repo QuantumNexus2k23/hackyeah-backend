@@ -17,12 +17,18 @@ class Hero(models.Model):
     name = models.CharField(max_length=100)
     image = models.ImageField(upload_to=HERO_IMAGE_UPLOAD_TO, blank=True, null=True)
 
+    def __str__(self):
+        return self.name
+
 
 class City(models.Model):
     name = models.CharField(max_length=150)
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name_plural = "cities"
 
 
 class Route(models.Model):
@@ -70,6 +76,8 @@ class RoutePoint(BasePoint):
     )
     order = models.PositiveSmallIntegerField()
     description = models.TextField(blank=True)
+    hero_story = models.TextField(blank=True)
+    hero_quote = models.TextField(blank=True)
     main_image = models.ImageField(
         upload_to=ROUTE_POINTS_IMAGE_UPLOAD_TO, blank=True, null=True
     )
@@ -79,6 +87,7 @@ class RoutePoint(BasePoint):
 
     class Meta:
         unique_together = ("route", "order")
+        ordering = ("order",)
 
     def __str__(self):
         return self.name
@@ -95,6 +104,7 @@ class Paragraph(models.Model):
 
     class Meta:
         unique_together = ("route_point", "order")
+        ordering = ("order",)
 
     def __str__(self):
         return f"{self.route_point.name} - {self.order}"
