@@ -44,6 +44,9 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: "3.10"
+      - name: Install gdal
+        if: matrix.tox-env == "mypy"
+        run: sudo apt-get install gdal-bin
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
