@@ -232,6 +232,8 @@ pickleshare==0.7.5
     # via
     #   -r base.txt
     #   ipython
+pillow==10.0.1
+    # via -r base.txt
 platformdirs==3.10.0
     # via black
 pluggy==1.3.0

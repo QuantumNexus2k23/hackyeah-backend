@@ -113,6 +113,8 @@ pexpect==4.8.0
     # via ipython
 pickleshare==0.7.5
     # via ipython
+pillow==10.0.1
+    # via -r base.in
 prompt-toolkit==3.0.39
     # via
     #   click-repl
