@@ -40,4 +40,4 @@ def debug_task(self):
     debug_task.apply_async(eta=datetime.datetime.utcnow() + datetime.timedelta(seconds=10))
     """
     print("Request: {0!r}".format(self.request))
-    logger.info("Request: {0!r}".format(self.request))
+    logger.info("Request: {0!r}", self.request)
