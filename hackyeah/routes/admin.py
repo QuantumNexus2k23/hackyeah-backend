@@ -50,7 +50,16 @@ class CityAdmin(admin.ModelAdmin):
 
 @admin.register(Paragraph)
 class ParagraphAdmin(admin.ModelAdmin):
-    pass
+    list_display = (
+        "order",
+        "display_route",
+        "route_point",
+    )
+    list_filter = ("route_point__route",)
+
+    @admin.display(description="Route")
+    def display_route(self, obj):
+        return obj.route_point.route
 
 
 @admin.register(Hero)

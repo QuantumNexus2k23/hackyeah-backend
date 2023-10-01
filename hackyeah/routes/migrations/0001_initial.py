@@ -128,7 +128,7 @@ class Migration(migrations.Migration):
                     models.DecimalField(blank=True, decimal_places=6, max_digits=9),
                 ),
                 ("short_description", models.TextField(blank=True)),
-                ("google_maps_url", models.URLField(max_length=255)),
+                ("google_maps_url", models.URLField(max_length=1000)),
                 ("order", models.PositiveSmallIntegerField()),
                 ("description", models.TextField(blank=True)),
                 ("hero_story", models.TextField(blank=True)),

@@ -26,6 +26,7 @@ class RoutePointSerializer(serializers.ModelSerializer):
             "id",
             "name",
             "short_description",
+            "description",
             "coordinate",
             "main_image",
             "visited_by_user",
@@ -36,7 +37,7 @@ class RoutePointSerializer(serializers.ModelSerializer):
     def get_coordinate(self, obj):
         return {"latitude": obj.latitude, "longitude": obj.longitude}
 
-    def get_visited_by_user(self, obj: RoutePoint):
+    def get_visited_by_user(self, obj: RoutePoint) -> bool:
         request = self.context.get("request")
         if request and request.user.is_authenticated:
             return RoutePointVisit.objects.filter(
@@ -67,7 +68,7 @@ class RouteSerializer(serializers.ModelSerializer):
             return starting_points.name
         return ""
 
-    def get_visited_by_user(self, obj: Route):
+    def get_visited_by_user(self, obj: Route) -> bool:
         request = self.context.get("request")
         if request and request.user.is_authenticated:
             return (
