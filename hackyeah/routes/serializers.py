@@ -24,6 +24,7 @@ class RoutePointSerializer(serializers.ModelSerializer):
         model = RoutePoint
         fields = (
             "id",
+            "route",
             "name",
             "short_description",
             "description",
