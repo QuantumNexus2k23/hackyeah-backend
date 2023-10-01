@@ -40,4 +40,4 @@ DATABASES = {"default": dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
 # ------------- STATIC -------------
 STATIC_ROOT = BASE_DIR.parent.joinpath("public")
-MEDIA_ROOT = BASE_DIR.parent.joinpath("media")
+MEDIA_ROOT = BASE_DIR.joinpath("media")
