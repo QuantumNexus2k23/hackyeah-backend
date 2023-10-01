@@ -15,7 +15,7 @@ PARAGRAPH_IMAGE_UPLOAD_TO = Path("route_points", "image")
 
 class Hero(models.Model):
     name = models.CharField(max_length=100)
-    image = models.ImageField(upload_to=HERO_IMAGE_UPLOAD_TO, blank=True, null=True)
+    image = models.URLField(blank=True, null=True, max_length=1000)
 
     def __str__(self):
         return self.name
@@ -35,7 +35,7 @@ class Route(models.Model):
     city = models.ForeignKey(City, on_delete=models.CASCADE, null=True)
     name = models.CharField(max_length=150)
     description = models.TextField(blank=True)
-    image = models.ImageField(upload_to=ROUTE_IMAGE_UPLOAD_TO, blank=True, null=True)
+    image = models.URLField(blank=True, null=True, max_length=1000)
     duration = models.TimeField(default="01:00:00")
     route_type = models.CharField(
         choices=RouteType.choices, max_length=20, default=RouteType.historical
@@ -81,9 +81,7 @@ class RoutePoint(BasePoint):
     description = models.TextField(blank=True)
     hero_story = models.TextField(blank=True)
     hero_quote = models.TextField(blank=True)
-    main_image = models.ImageField(
-        upload_to=ROUTE_POINTS_IMAGE_UPLOAD_TO, blank=True, null=True
-    )
+    main_image = models.URLField(blank=True, null=True, max_length=1000)
     audio = models.FileField(
         upload_to=ROUTE_POINTS_AUDIO_UPLOAD_TO, blank=True, null=True
     )
@@ -102,7 +100,7 @@ class Paragraph(models.Model):
         RoutePoint, related_name="paragraphs", on_delete=models.CASCADE
     )
     text = models.TextField()
-    image = models.ImageField(upload_to=HERO_IMAGE_UPLOAD_TO, blank=True, null=True)
+    image = models.URLField(blank=True, null=True, max_length=1000)
     image_description = models.TextField(blank=True)
 
     class Meta:
