@@ -2,14 +2,14 @@
   pk: 1
   fields:
     name: Athena
-    image: route_points/image/atena.png
+    image: route/athena1/atena.png
 - model: routes.route
   pk: 4
   fields:
     city: 1
     name: Athena's journey
     description: Go on the adventure with the brave Athena and discover wonders of the Cracow Old Town.\n\nLet Athena tell you a story how she conquer the dragon and took the old town back for the Cracow residents or something.\n\nYou’ll see the old Royal Castle, beautiful Slowacki’s theatre, you’ll stroll through the main square gardens and many more!
-    image: route/images/route1.png
+    image: route/athena1/route1.png
     duration: 01:00:00
     route_type: historical
     hero: 1
@@ -31,26 +31,7 @@
       that time she helped a young cobbler, named Dratewka. A few years before, an
       old and nasty dragon had settled in the cave inside the Wawel Hill.
     hero_quote: Come and hear my story!
-    main_image: route_points/images/route_point1.png
-    audio: ''
-- model: routes.routepoint
-  pk: 5
-  fields:
-    name: Second Point
-    longitude: '19.933732'
-    latitude: '50.054437'
-    short_description: Starting point
-    google_maps_url: https://www.google.com/maps/place/Baszta+Z%C5%82odziejska/@50.0544368,19.9337323,17.59z/data=!4m9!1m2!2m1!1swawel!3m5!1s0x47165b6d97535d45:0x10a11cb058374021!8m2!3d50.0535896!4d19.9337434!16s%2Fg%2F121fx494?hl=pl-PL&entry=ttu
-    route: 4
-    order: 2
-    description: Kolejne miejsce
-    hero_story: Her story related to the castle or not. Her story related to the castle
-      or not.Her story related to the castle or not.Her story related to the castle
-      or not.Her story related to the castle or not.Her story related to the castle
-      or not.Her story related to the castle or not.Her story related to the castle
-      or not.
-    hero_quote: Is this interesting?
-    main_image: route_points/images/2023/09/30/p1.png
+    main_image: route/athena1/points/route_point1.png
     audio: ''
 - model: routes.paragraph
   pk: 2
@@ -64,7 +45,7 @@
       and enlarged over the centuries into a number of structures around an Italian-styled
       courtyard. It represents nearly all European architectural styles of the Medieval,
       Renaissance and Baroque periods.'
-    image: https://s3-alpha-sig.figma.com/img/de5b/6a8b/c5f470acbba35f505f762a1a668fea95?Expires=1696809600&Signature=jVn1lmXYjVnUKq67Vn667Nfz3vejJEXrB6McaYDEnjFieCBLXD13ZPusy873Xf3gU0S9m4tYeUbaciF-9XlhVC1IUGtJ4PygaTteMMTxpewhhGj6jpqxCrYn03fuwX01NUjr9eGnbP~k9d8fBtosujGYZpxduGdU3mWD~uu0DMKnXFtryameP~zDYKvfi7ldhh3HTb2zE9QNOXRmcgJjc00c8thi5K0gBIKyKPmh4Ad82pEc1SobfQ7Cyu9LuWF9~7c97gmixFybLh7HYLlzPagkkSgYxy1EYfABWpwfu-0~ZmdiASXgFCsnGIqaJcPCTWpQIPuQJmSVXOV79p-~GA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    image: route/athena1/paragraphs/p2.jpeg
     image_description: Sigismund’s Tower and Kosciuszko Monument
 - model: routes.paragraph
   pk: 1
@@ -78,7 +59,7 @@
       including the Wawel Cathedral where Polish monarchs were crowned and buried.
       In 1978 Wawel was declared the first World Heritage Site as part of the Historic
       Centre of Kraków."
-    image: route_points/image/p1.png
+    image: route/athena1/paragraphs/p1.png
     image_description: Sigismund's Golden Chapel
 - model: routes.paragraph
   pk: 3
@@ -93,7 +74,7 @@
       The museum's holdings in oriental art include the largest collection of Ottoman
       tents in Europe. Wawel Castle is the most visited art museum in the country
       and the 22nd most visited art museum in the world.
-    image: ''
+    image: route/athena1/paragraphs/p3.png
     image_description: ''
 - model: routes.routepoint
   pk: 5
@@ -147,7 +128,7 @@
     description: Kolejne miejsce
     hero_story: Athena loves listening to the trumpet melody at noon. Years ago she woke up a trumpet player who warned the city about Mongolian attack, saving many lives. Wait with her on the main square and enjoy the music!
     hero_quote: Go and explore!
-    main_image: https://s3-alpha-sig.figma.com/img/f74d/9017/e193c7b7b5a501c3fc15ff878490cc75?Expires=1696809600&Signature=Kh2XxR12PNq5MS6sKegd0208X5xCHZ9~sIVid4hdphudXAP06xfasANp3qe7zS6lqt67HMyK~qKnjU-Zs241cmq-KoU2AG4h7eZQL6qKiIUGqb9sISbnU62zsgzQ6abbJ0vwglmfpL7CcaHgGIoCW7DheYa-ChpE5PJeJaNSt1OH6KsKfCTryG1n09fbusAGy8HQvPcllVOXkveSvqDS6w68tHaY9bVdry8s-Hxafd2k18Cc-aV4wuw5dFin2zHN4XYQOrBJFM1O~a4Zs0sBiROgMqGjECLYoZsCIExewmFufKeLn4~fm4OiVn4TbRjvEqua7vZk1MsvgPj5~2vvBw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    main_image: route/athena1/points/route_point6.jpg
     audio: ''
 - model: routes.paragraph
   pk: 7
@@ -155,7 +136,7 @@
     order: 1
     route_point: 6
     text: Built in the 14th century, its foundations date back to the early 13th century and serve as one of the best examples of Polish Gothic architecture. Standing 80 m tall, it is particularly famous for its wooden altarpiece carved by Wit Stwosz. Some of its monumental polychrome murals were designed by Poland's leading history painter, Jan Matejko. In 1978 it became a UNESCO World Heritage Site alongside the Historic Centre of Kraków.
-    image: https://s3-alpha-sig.figma.com/img/9423/3545/7f35062a299a5c5a637b9e79d52f2328?Expires=1696809600&Signature=CVF8ahgEKt3-e~8RDR1Qc4vT-UZdtSGFv76MB~HTW-zHXGKYypfec64GBNERsQ2SIh8iM2Wqigq6T4crbVW9~iMC42FAnyQuKzSSmtp8b0q0arlJSLX0NTeclJ1spPmnEotgqhCNA3JK9v2xLSCWXGiijtPEXR69yxbqYXi-HNSrY5FxMIKs1CQBjahYhq7kL2kt992ZtcF9iOw~f7pv~YJwSCkJjM8oGB-VT5Wpw7WZt~97tYz55iAk0W2FJsUUAEXDBBCG59VUMLZQMb61T6OtlrjA2ns9yrAviJBL2cZYs1VvpX2Y16fICnM2ata~ldeuTwTVYpTwIIoicTni0Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    image: route/athena1/paragraphs/p7.jpg
     image_description: Cathedral vault
 - model: routes.paragraph
   pk: 8
@@ -163,7 +144,7 @@
     order: 2
     route_point: 6
     text: On every hour, 24 hours a day, 365 days a year, a trumpet signal — called the Hejnał mariacki — is played from the top of the taller of Saint Mary's two towers. The plaintive tune breaks off in mid-stream, to commemorate a famous 13th century trumpeter who was shot in the throat while sounding the alarm before a Mongol attack on the city. The noon-time hejnał is heard across Poland and abroad broadcast live by the Polish national Radio 1 Station.
-    image: https://s3-alpha-sig.figma.com/img/1c75/9961/6b6a143e3a0bdde96493f7ec97e2484b?Expires=1696809600&Signature=XGY0Xb~cxuW3je3oT3cR~kDnl88j9BfQ5lXeDiu3lzfUACOPph0J0zDdiCzH-I12EdF-yNqgijHEjKqSTEClY7zs8fHDZD~s2OdEug02eEftl5Qlho0K0-dmGNpeLyAAG9oPdZkHlqIHC7tEZps1c2zARsv6giyXRZVBz1jvGuJUqmbeuJ4sJjM0X1TDNQ88WFSRaI2rMr70FlfZ1xbjXInL4Duj0o~CmX7-dYuTTjrW7N0jwe7XXoz0ckvgHBuJ2afJf9RGoVkvPVajPXUJeX-kzJwgqHaAoSQ-eiTpKBk2eSuALw7rkgolu9fYumjRI2xv8ooQb-tJoRcsYMTkjA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    image: route/athena1/paragraphs/p8.jpg
     image_description: Wit Stwosz Altar
 - model: routes.paragraph
   pk: 9
