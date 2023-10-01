@@ -1,3 +1,5 @@
+from typing import Optional
+
 from drf_yasg.utils import swagger_serializer_method
 from rest_framework import serializers
 
@@ -38,13 +40,13 @@ class RoutePointSerializer(serializers.ModelSerializer):
     def get_coordinate(self, obj):
         return {"latitude": obj.latitude, "longitude": obj.longitude}
 
-    def get_visited_by_user(self, obj: RoutePoint) -> bool:
+    def get_visited_by_user(self, obj: RoutePoint) -> Optional[bool]:
         request = self.context.get("request")
         if request and request.user.is_authenticated:
             return RoutePointVisit.objects.filter(
                 user=request.user, route_point=obj
             ).exists()
-        return False
+        return None
 
 
 class HeroSerializer(serializers.ModelSerializer):
