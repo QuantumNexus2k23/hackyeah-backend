@@ -92,7 +92,7 @@
     main_image: https://s3-alpha-sig.figma.com/img/29e4/adde/957f2855efa02c470f2fd716235fd8cc?Expires=1696809600&Signature=UIyxziW3MtEZdtFuOrI8FWhSU7wak9Oq9WGOzrvMWztKmSG~iGp9FGiRCKLanCKkNQ1sCU-FmOhdvCvTyxgHY~4Is6pwaS09HNT71fk6SE3rE0SoGz5GvttUqzv6hU~bSCZpvu9rFTvYY2JVp6n1uNmMVlNE-ccjwvV0g2WkVA9AwdEh4aJQgJsnavINGstl0kQ2EeS0NclWz6crQnp1sQp2appqpDRoupTfPQAHkYZdBHsc8ABgxtE7R4msF1rQNiepbp0AIozlNjnPh2UEy1Cgw8uW-jLaGfVC632k2KZwFIns06dIXEeQ7LWL9EF-G0l~8k7edspnY0h72s82Yw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
     audio: ''
 - model: routes.paragraph
-  pk: 2
+  pk: 4
   fields:
     order: 1
     route_point: 5
@@ -100,7 +100,7 @@
     image: https://s3-alpha-sig.figma.com/img/e2a8/44e1/e49bb1f91a777247ccdf55b45a936e77?Expires=1696809600&Signature=ET5noxBbQGL6iY6vWqAfmEFFVdRt-9Y5evovlGNyxZQI6e2tzQ-TS0eM6uUr3Eu6Od88g0IxeTzRG8g-h2ib9-1MRIANdKn~yQ919A8-HXoYeyuT7gg~3MGBYVVU75fu52n7YV5-BxR17T3B~fpg1xEYBeeZ1E1XJ3crIIcLnWOkVA2~NXH6H~h8CCFHqW1Q8TDqF3~eCtbcPRk1nqOh7ffyxfOZVJIlcDC1b9-3r6Q3Erxq0-Bkq1t46oYJPTK10UTX2cJgueC7vEbhzNON9FMYbuRTozFdkU0MkHah3UH9t16hE4aYcWUUo-LOiB1X0i-UnltUaZbW7MkpPx-Bcg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
     image_description: Mariacki Church visible through celling window
 - model: routes.paragraph
-  pk: 1
+  pk: 5
   fields:
     order: 2
     route_point: 5
@@ -108,11 +108,50 @@
     image: https://s3-alpha-sig.figma.com/img/4b81/889d/9f236a2589076a75926a070e84e461a2?Expires=1696809600&Signature=AVMhGWiY732Ip387zxD4Sh26gDuPfZhSCN~oSv0FjaCG0qjWcNjeLcL4Vo--NvrygKHVLND5auEpr8C~R1BwKHlj2KPl0f2guuvzoWHhTtyOps~z4t64qv2GMhVAPmPpSRc8L2lODVTc0sRBAYZUo4JhIl6mOB-F1fCp3YjnvKBov06wLbUXzemjk8uvUxVkzVE9ngKw0RbaqX9wrrxDkdJAt7WPAtKhiNUtmbgsp5NdN2EebcfNo5U3rCLe5-UYVnF84zvjn7PEOQIcmD-SNsahMQ2Hf6Q0ZpGOS5Pv6ROSDJ23HaXqfEpU9ukHYHYhnV2FLeuPtRRdmKegp17r8A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
     image_description: Rynek Underground Museum
 - model: routes.paragraph
-  pk: 3
+  pk: 6
   fields:
     order: 3
     route_point: 5
     text: The tourist route under the Main Market Square leads between the stone and brick walls of the cellars of former trading sites, including the Kramy Bolesławowe Stalls, Kramy Bogate Stalls, the Great Scales, and the Cloth Hall. Another curio is the preserved stretches of transport routes, which provide an idea of what the mediaeval technology of road building was. Numerous objects make it possible to imagine daily life in Kraków a few centuries ago. The exhibition shows, among others, mediaeval tools, historical coins, clay figures, decorations, dice and toiletry articles used over 600 years ago, together with the Tartar arrowheads, and beads and medallions from the Orient.
+    image: ''
+    image_description: ''
+- model: routes.routepoint
+  pk: 6
+  fields:
+    name: St. Mary's Basilica
+    longitude: '19.9368154'
+    latitude: '50.0616411'
+    short_description: It is a Brick Gothic church placed next to the Main Market Square.
+    google_maps_url: https://www.google.com/maps/place/Bazylika+Mariacka/@50.0616411,19.9368154,17z/data=!3m1!4b1!4m6!3m5!1s0x47165b11f53a5077:0xdd371e3071dcbf32!8m2!3d50.0616411!4d19.9393903!16zL20vMDJsd2Q1?hl=pl-PL&entry=ttu
+    route: 4
+    order: 3
+    description: Kolejne miejsce
+    hero_story: Athena loves listening to the trumpet melody at noon. Years ago she woke up a trumpet player who warned the city about Mongolian attack, saving many lives. Wait with her on the main square and enjoy the music!
+    hero_quote: Go and explore!
+    main_image: https://s3-alpha-sig.figma.com/img/f74d/9017/e193c7b7b5a501c3fc15ff878490cc75?Expires=1696809600&Signature=Kh2XxR12PNq5MS6sKegd0208X5xCHZ9~sIVid4hdphudXAP06xfasANp3qe7zS6lqt67HMyK~qKnjU-Zs241cmq-KoU2AG4h7eZQL6qKiIUGqb9sISbnU62zsgzQ6abbJ0vwglmfpL7CcaHgGIoCW7DheYa-ChpE5PJeJaNSt1OH6KsKfCTryG1n09fbusAGy8HQvPcllVOXkveSvqDS6w68tHaY9bVdry8s-Hxafd2k18Cc-aV4wuw5dFin2zHN4XYQOrBJFM1O~a4Zs0sBiROgMqGjECLYoZsCIExewmFufKeLn4~fm4OiVn4TbRjvEqua7vZk1MsvgPj5~2vvBw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    audio: ''
+- model: routes.paragraph
+  pk: 7
+  fields:
+    order: 1
+    route_point: 6
+    text: Built in the 14th century, its foundations date back to the early 13th century and serve as one of the best examples of Polish Gothic architecture. Standing 80 m tall, it is particularly famous for its wooden altarpiece carved by Wit Stwosz. Some of its monumental polychrome murals were designed by Poland's leading history painter, Jan Matejko. In 1978 it became a UNESCO World Heritage Site alongside the Historic Centre of Kraków.
+    image: https://s3-alpha-sig.figma.com/img/9423/3545/7f35062a299a5c5a637b9e79d52f2328?Expires=1696809600&Signature=CVF8ahgEKt3-e~8RDR1Qc4vT-UZdtSGFv76MB~HTW-zHXGKYypfec64GBNERsQ2SIh8iM2Wqigq6T4crbVW9~iMC42FAnyQuKzSSmtp8b0q0arlJSLX0NTeclJ1spPmnEotgqhCNA3JK9v2xLSCWXGiijtPEXR69yxbqYXi-HNSrY5FxMIKs1CQBjahYhq7kL2kt992ZtcF9iOw~f7pv~YJwSCkJjM8oGB-VT5Wpw7WZt~97tYz55iAk0W2FJsUUAEXDBBCG59VUMLZQMb61T6OtlrjA2ns9yrAviJBL2cZYs1VvpX2Y16fICnM2ata~ldeuTwTVYpTwIIoicTni0Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    image_description: Cathedral vault
+- model: routes.paragraph
+  pk: 8
+  fields:
+    order: 2
+    route_point: 6
+    text: On every hour, 24 hours a day, 365 days a year, a trumpet signal — called the Hejnał mariacki — is played from the top of the taller of Saint Mary's two towers. The plaintive tune breaks off in mid-stream, to commemorate a famous 13th century trumpeter who was shot in the throat while sounding the alarm before a Mongol attack on the city. The noon-time hejnał is heard across Poland and abroad broadcast live by the Polish national Radio 1 Station.
+    image: https://s3-alpha-sig.figma.com/img/1c75/9961/6b6a143e3a0bdde96493f7ec97e2484b?Expires=1696809600&Signature=XGY0Xb~cxuW3je3oT3cR~kDnl88j9BfQ5lXeDiu3lzfUACOPph0J0zDdiCzH-I12EdF-yNqgijHEjKqSTEClY7zs8fHDZD~s2OdEug02eEftl5Qlho0K0-dmGNpeLyAAG9oPdZkHlqIHC7tEZps1c2zARsv6giyXRZVBz1jvGuJUqmbeuJ4sJjM0X1TDNQ88WFSRaI2rMr70FlfZ1xbjXInL4Duj0o~CmX7-dYuTTjrW7N0jwe7XXoz0ckvgHBuJ2afJf9RGoVkvPVajPXUJeX-kzJwgqHaAoSQ-eiTpKBk2eSuALw7rkgolu9fYumjRI2xv8ooQb-tJoRcsYMTkjA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    image_description: Wit Stwosz Altar
+- model: routes.paragraph
+  pk: 9
+  fields:
+    order: 3
+    route_point: 6
+    text: The Veit Stoss Altarpiece is about 13 m high and 11 m wide when the panels of the triptych are completely opened. The realistically sculptured figures are 2.7 m, each one was carved out of a tree trunk of lime. Other parts of the altarpiece are made from oak wood, and the background is constructed of larch wood. When closed, the panels show 12 scenes of the life of Jesus and Mary.
     image: ''
     image_description: ''
 
