@@ -31,7 +31,7 @@
       that time she helped a young cobbler, named Dratewka. A few years before, an
       old and nasty dragon had settled in the cave inside the Wawel Hill.
     hero_quote: Come and hear my story!
-    main_image: route/athena1/points/route_point1.png
+    main_image: route/athena1/points/route_point4.png
     audio: ''
 - model: routes.paragraph
   pk: 2
@@ -74,7 +74,7 @@
       The museum's holdings in oriental art include the largest collection of Ottoman
       tents in Europe. Wawel Castle is the most visited art museum in the country
       and the 22nd most visited art museum in the world.
-    image: route/athena1/paragraphs/p3.png
+    image: ''
     image_description: ''
 - model: routes.routepoint
   pk: 5
@@ -89,7 +89,7 @@
     description: Kolejne miejsce
     hero_story: Athena cares for the historical heritage. The city of Cracow is very old and has many underground layers as it turned out during renovation works. Objects like jewellery, coins and weapon are often found while digging. Athena came up with an idea and whispered it into the ears of architects and museum curators.
     hero_quote: Let's see!
-    main_image: https://s3-alpha-sig.figma.com/img/29e4/adde/957f2855efa02c470f2fd716235fd8cc?Expires=1696809600&Signature=UIyxziW3MtEZdtFuOrI8FWhSU7wak9Oq9WGOzrvMWztKmSG~iGp9FGiRCKLanCKkNQ1sCU-FmOhdvCvTyxgHY~4Is6pwaS09HNT71fk6SE3rE0SoGz5GvttUqzv6hU~bSCZpvu9rFTvYY2JVp6n1uNmMVlNE-ccjwvV0g2WkVA9AwdEh4aJQgJsnavINGstl0kQ2EeS0NclWz6crQnp1sQp2appqpDRoupTfPQAHkYZdBHsc8ABgxtE7R4msF1rQNiepbp0AIozlNjnPh2UEy1Cgw8uW-jLaGfVC632k2KZwFIns06dIXEeQ7LWL9EF-G0l~8k7edspnY0h72s82Yw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    main_image: route/athena1/points/route_point5.png
     audio: ''
 - model: routes.paragraph
   pk: 4
@@ -97,7 +97,7 @@
     order: 1
     route_point: 5
     text: The Rynek Underground is one of the youngest Cracow’s museums. Modern and keeping up with the new standards, but perfectly recreating atmosphere of the city existing in the previous centuries. The main exhibit “In the Footsteps of Krakow’s European Identity” was launched three days after the museum's opening. It uses holograms constructed by using projectors, alongside fog machines and screens.
-    image: https://s3-alpha-sig.figma.com/img/e2a8/44e1/e49bb1f91a777247ccdf55b45a936e77?Expires=1696809600&Signature=ET5noxBbQGL6iY6vWqAfmEFFVdRt-9Y5evovlGNyxZQI6e2tzQ-TS0eM6uUr3Eu6Od88g0IxeTzRG8g-h2ib9-1MRIANdKn~yQ919A8-HXoYeyuT7gg~3MGBYVVU75fu52n7YV5-BxR17T3B~fpg1xEYBeeZ1E1XJ3crIIcLnWOkVA2~NXH6H~h8CCFHqW1Q8TDqF3~eCtbcPRk1nqOh7ffyxfOZVJIlcDC1b9-3r6Q3Erxq0-Bkq1t46oYJPTK10UTX2cJgueC7vEbhzNON9FMYbuRTozFdkU0MkHah3UH9t16hE4aYcWUUo-LOiB1X0i-UnltUaZbW7MkpPx-Bcg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    image: route/athena1/paragraphs/p4.png
     image_description: Mariacki Church visible through celling window
 - model: routes.paragraph
   pk: 5
@@ -105,7 +105,7 @@
     order: 2
     route_point: 5
     text: The Rynek Underground exhibition presents not only Cracow’s rich history, but also the connections between the city and mediaeval Europe’s chief centres of trade and culture. Moreover, it portrays the significance of the capital of Poland in the operation of the Hanseatic League. The real historical objects on display, just to mention 14th-century coins, decorations, and pottery, are proof of the European cultural and trade exchange that continued here incessantly for hundreds of years.
-    image: https://s3-alpha-sig.figma.com/img/4b81/889d/9f236a2589076a75926a070e84e461a2?Expires=1696809600&Signature=AVMhGWiY732Ip387zxD4Sh26gDuPfZhSCN~oSv0FjaCG0qjWcNjeLcL4Vo--NvrygKHVLND5auEpr8C~R1BwKHlj2KPl0f2guuvzoWHhTtyOps~z4t64qv2GMhVAPmPpSRc8L2lODVTc0sRBAYZUo4JhIl6mOB-F1fCp3YjnvKBov06wLbUXzemjk8uvUxVkzVE9ngKw0RbaqX9wrrxDkdJAt7WPAtKhiNUtmbgsp5NdN2EebcfNo5U3rCLe5-UYVnF84zvjn7PEOQIcmD-SNsahMQ2Hf6Q0ZpGOS5Pv6ROSDJ23HaXqfEpU9ukHYHYhnV2FLeuPtRRdmKegp17r8A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    image: route/athena1/paragraphs/p5.png
     image_description: Rynek Underground Museum
 - model: routes.paragraph
   pk: 6
