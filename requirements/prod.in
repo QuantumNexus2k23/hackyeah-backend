@@ -2,4 +2,3 @@
 gunicorn
 sentry-sdk
 dj-database-url
-whitenoise

@@ -1,0 +1,121 @@
+# THIRD EXAMPLE
+- model: routes.route
+  pk: 300
+  fields:
+    city: 1
+    name: Vistula Banks Tour
+    description: "Vistula bank is a perfect place for a walk. You can admire the beautiful panorama of the 
+      city and the Wawel Castle. This tour will take you to the most interesting places along the river."
+    image: "route/athena2/route2.jpg"
+    duration: "03:30:00"
+    route_type: "cultural"
+    hero: 1
+
+# STARTING POINT
+- model: routes.routepoint
+  pk: 300
+  fields:
+    name: Dragon’s Cave
+    longitude: "19.938434"
+    latitude: "50.061947"
+    short_description: "That’s where Dratewka’s legend started.\nBe careful!"
+    google_maps_url: "https://www.google.com/maps/place/Smocza+Jama/@50.0531242,19.9242303,16z/"
+    route: 300
+    order: 1
+    description: >
+      This is the place where the legend of the Wawel Dragon born.
+    hero_story: >
+      Athena once came to the city of Cracow to admire the castle. She is very fond of architecture and always tries to protect it from damage. During that time she helped a young cobbler, named Dratewka. A few years before, an old and nasty dragon had settled in the cave inside the Wawel Hill. The dragon terrified local villagers by eating up their cattle and threatened to destroy the castle. It promised to stop only if given
+      the king's only daughter. 
+      The princess was Dratewka's love of life. Thanks to Athena's clever idea he was able to trick the dragon and save her
+    hero_quote: "Come and hear my story!"
+    main_image: "route/athena2/points/route_point1.png"
+    audio: ''
+
+# Paragraphs for Starting Point
+- model: routes.paragraph
+  pk: 301
+  fields:
+    order: 1
+    route_point: 300
+    text: >
+      Smocza Jama has two entrances, one natural and one artificial — a 19th-century waterwork well. 
+      They are connected by three large chambers. A side passage, discovered in 1974,
+      leads under the St. Stanislaus and St. Wenceslaus's Cathedral.
+      In the underground pools lives a rare crustacean troglobiont, Niphargus tatrensis, relict of the Tertiary sea fauna.
+    image: route/athena2/paragraphs/p301.jpg
+    image_description: "People exploring the cave"
+
+# SECOND POINT
+- model: routes.routepoint
+  pk: 301
+  fields:
+    name: "Skałka"
+    longitude: "19.9271991"
+    latitude: "50.0510361"
+    short_description: >
+      Skałka, which means "a small rock" ...
+    google_maps_url: "https://www.google.com/maps/place/Krypta+Zas%C5%82u%C5%BConych+na+Ska%C5%82ce/@50.0510361,19.9271991,1"
+    route: 300
+    order: 2
+    description: >
+      Skałka, which means "a small rock" in Polish, is a small outcrop in Kraków atop of which a Pauline monastery is located.
+    hero_story: >
+      Admire with Athena one of the most famous Cracow’s churches!
+      It is amazingly preserved. Also, many artists are prominent people where buried here.
+    hero_quote: "Come and hear my story!"
+    main_image: "route/athena2/points/route_point2.jpg"
+    audio: ''
+
+# Paragraphs for Second Point
+- model: routes.paragraph
+  pk: 303
+  fields:
+    order: 1
+    route_point: 301
+    text: >
+      Located on the Vistula River south of Wawel, Skałka was part of the
+      island city of Kazimierz until the nineteenth century, when the Old Vistula River was filled in.
+      The original church was built in the Romanesque style. King Casimir III replaced it
+      with a Gothic church, and since 1472 that shrine has been in the possession of a monastic
+      community of Pauline Fathers. In 1733-51 the church received a Baroque decor.
+      It is one of the most famous Polish sanctuaries.
+    image: route/athena2/paragraphs/p303.jpg
+    image_description: "Autumn nearby Skałka"
+
+# THIRD POINT
+- model: routes.routepoint
+  pk: 302
+  fields:
+    name: Old Synagogue
+    longitude: "19.9437281"
+    latitude: "50.0514596"
+    short_description: "The Old Synagogue was an Orthodox ... "
+    google_maps_url: "https://www.google.com/maps/place/Stara+Synagoga/@50.0514596,19.9437281,17z"
+    route: 300
+    order: 3
+    description: >
+      The Old Synagogue was an Orthodox Jewish synagogue situated in the Kazimierz district of Kraków, Poland.
+    hero_story: "Come and hear my story!"
+    hero_quote: >
+      Athena knows how important for people is religion and respecting each others believes. 
+      She wants to show you the place of the true gems of Jewish culture in Cracow.
+    main_image: "route/athena2/points/route_point3.jpg"
+    audio: ''
+
+# Paragraphs for Third Point
+- model: routes.paragraph
+  pk: 305
+  fields:
+    order: 1
+    route_point: 302
+    text: >
+      In Yiddish it was referred to as the Alta Shul. 
+      It is the oldest synagogue building still standing in Poland,
+      and one of the most precious landmarks of Jewish architecture in Europe. 
+      Until the beginning of the Second World War in 1939, it was one of the city's most important synagogues 
+      as well as the main religious, social, and organizational centre of the Kraków Jewish community.
+      The Synagogue was built in 1407 or 1492; the date of building varies with several sources. 
+      The original building was rebuilt in 1570, by the Italian architect Mateo Gucci.
+    image: route/athena2/paragraphs/p305.png
+    image_description: "The other side of the Old Synagogue"

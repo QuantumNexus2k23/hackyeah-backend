@@ -1,0 +1,218 @@
+- model: routes.hero
+  pk: 1
+  fields:
+    name: Athena
+    image: route/athena1/atena.png
+- model: routes.route
+  pk: 4
+  fields:
+    city: 1
+    name: Athena's journey
+    description: Go on the adventure with the brave Athena and discover wonders of the Cracow Old Town.\n\nLet Athena tell you a story how she conquer the dragon and took the old town back for the Cracow residents or something.\n\nYou’ll see the old Royal Castle, beautiful Slowacki’s theatre, you’ll stroll through the main square gardens and many more!
+    image: route/athena1/route1.jpg
+    duration: 01:00:00
+    route_type: historical
+    hero: 1
+    comics_url: https://op.europa.eu/o/opportal-service/download-handler?identifier=8c903eb4-20dc-11ec-bd8e-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=
+- model: routes.routepoint
+  pk: 4
+  fields:
+    name: Wawel Royal Castle
+    longitude: '19.932848'
+    latitude: '50.054112'
+    short_description: Fortified residency which was a home to many royals reigning
+      in Poland.
+    google_maps_url: https://www.google.com/maps/place/Zamek+Kr%C3%B3lewski+na+Wawelu/@50.0541115,19.9328481,17z/data=!3m1!4b1!4m6!3m5!1s0x47165b6d053619f5:0xacb9dfc4d67fa598!8m2!3d50.0541115!4d19.935423!16s%2Fm%2F0cp08lw?entry=ttu
+    route: 4
+    order: 1
+    description: Miejsce gdzie zaczynamy
+    hero_story: Athena once came to the city of Cracow to admire the castle. She is
+      very fond of architecture and always tries to protect it from damage. During
+      that time she helped a young cobbler, named Dratewka. A few years before, an
+      old and nasty dragon had settled in the cave inside the Wawel Hill.
+    hero_quote: Come and hear my story!
+    main_image: route/athena1/points/route_point4.jpg
+    audio: ''
+- model: routes.paragraph
+  pk: 2
+  fields:
+    order: 1
+    route_point: 4
+    text: 'The Wawel Royal Castle (Polish pronunciation: [ˈvavɛl]; Zamek Królewski
+      na Wawelu) and the Wawel Hill on which it sits constitute the most historically
+      and culturally significant site in Poland. A fortified residency on the Vistula
+      River in Kraków, it was established on the orders of King Casimir III the Great[2]
+      and enlarged over the centuries into a number of structures around an Italian-styled
+      courtyard. It represents nearly all European architectural styles of the Medieval,
+      Renaissance and Baroque periods.'
+    image: route/athena1/paragraphs/p2.jpeg
+    image_description: Sigismund’s Tower and Kosciuszko Monument
+- model: routes.paragraph
+  pk: 1
+  fields:
+    order: 2
+    route_point: 4
+    text: "The current castle was built in the 14th century, and expanded over the
+      next hundreds of years. \r\nIn the beginning of the 16th century King Sigismund
+      I the Old rebuild the royal residence int the Renaissance style. The complex
+      consists of numerous buildings of great historical and national importance,
+      including the Wawel Cathedral where Polish monarchs were crowned and buried.
+      In 1978 Wawel was declared the first World Heritage Site as part of the Historic
+      Centre of Kraków."
+    image: route/athena1/paragraphs/p1.jpg
+    image_description: Sigismund's Golden Chapel
+- model: routes.paragraph
+  pk: 3
+  fields:
+    order: 3
+    route_point: 4
+    text: Wawel Castle is now one of the country's premier art museums. Established
+      in 1930, the museum encompasses ten curatorial departments responsible for collections
+      of paintings, including an important collection of Italian Renaissance paintings,
+      prints, sculpture, textiles, among them the Sigismund II Augustus tapestry collection,
+      goldsmith's work, arms and armor, ceramics, Meissen porcelain, and period furniture.
+      The museum's holdings in oriental art include the largest collection of Ottoman
+      tents in Europe. Wawel Castle is the most visited art museum in the country
+      and the 22nd most visited art museum in the world.
+    image: ''
+    image_description: ''
+- model: routes.routepoint
+  pk: 5
+  fields:
+    name: Rynek Underground
+    longitude: '19.9353046'
+    latitude: '50.0619828'
+    short_description: The museum is situated below the market square of the city. It was opened in 2010.
+    google_maps_url: https://www.google.com/maps/place/Rynek+Podziemny/@50.0619828,19.9353046,17z/data=!3m1!4b1!4m6!3m5!1s0x47165b1208c81111:0xa52ade5a014fe7a3!8m2!3d50.0619828!4d19.9378795!16s%2Fm%2F0cnxxf9?hl=pl-PL&entry=ttu
+    route: 4
+    order: 2
+    description: Kolejne miejsce
+    hero_story: Athena cares for the historical heritage. The city of Cracow is very old and has many underground layers as it turned out during renovation works. Objects like jewellery, coins and weapon are often found while digging. Athena came up with an idea and whispered it into the ears of architects and museum curators.
+    hero_quote: Let's see!
+    main_image: route/athena1/points/route_point5.jpg
+    audio: ''
+- model: routes.paragraph
+  pk: 4
+  fields:
+    order: 1
+    route_point: 5
+    text: The Rynek Underground is one of the youngest Cracow’s museums. Modern and keeping up with the new standards, but perfectly recreating atmosphere of the city existing in the previous centuries. The main exhibit “In the Footsteps of Krakow’s European Identity” was launched three days after the museum's opening. It uses holograms constructed by using projectors, alongside fog machines and screens.
+    image: route/athena1/paragraphs/p4.jpg
+    image_description: Mariacki Church visible through celling window
+- model: routes.paragraph
+  pk: 5
+  fields:
+    order: 2
+    route_point: 5
+    text: The Rynek Underground exhibition presents not only Cracow’s rich history, but also the connections between the city and mediaeval Europe’s chief centres of trade and culture. Moreover, it portrays the significance of the capital of Poland in the operation of the Hanseatic League. The real historical objects on display, just to mention 14th-century coins, decorations, and pottery, are proof of the European cultural and trade exchange that continued here incessantly for hundreds of years.
+    image: route/athena1/paragraphs/p5.jpg
+    image_description: Rynek Underground Museum
+- model: routes.paragraph
+  pk: 6
+  fields:
+    order: 3
+    route_point: 5
+    text: The tourist route under the Main Market Square leads between the stone and brick walls of the cellars of former trading sites, including the Kramy Bolesławowe Stalls, Kramy Bogate Stalls, the Great Scales, and the Cloth Hall. Another curio is the preserved stretches of transport routes, which provide an idea of what the mediaeval technology of road building was. Numerous objects make it possible to imagine daily life in Kraków a few centuries ago. The exhibition shows, among others, mediaeval tools, historical coins, clay figures, decorations, dice and toiletry articles used over 600 years ago, together with the Tartar arrowheads, and beads and medallions from the Orient.
+    image: ''
+    image_description: ''
+- model: routes.routepoint
+  pk: 6
+  fields:
+    name: St. Mary's Basilica
+    longitude: '19.9368154'
+    latitude: '50.0616411'
+    short_description: It is a Brick Gothic church placed next to the Main Market Square.
+    google_maps_url: https://www.google.com/maps/place/Bazylika+Mariacka/@50.0616411,19.9368154,17z/data=!3m1!4b1!4m6!3m5!1s0x47165b11f53a5077:0xdd371e3071dcbf32!8m2!3d50.0616411!4d19.9393903!16zL20vMDJsd2Q1?hl=pl-PL&entry=ttu
+    route: 4
+    order: 3
+    description: Kolejne miejsce
+    hero_story: Athena loves listening to the trumpet melody at noon. Years ago she woke up a trumpet player who warned the city about Mongolian attack, saving many lives. Wait with her on the main square and enjoy the music!
+    hero_quote: Go and explore!
+    main_image: route/athena1/points/route_point6.jpg
+    audio: ''
+- model: routes.paragraph
+  pk: 7
+  fields:
+    order: 1
+    route_point: 6
+    text: Built in the 14th century, its foundations date back to the early 13th century and serve as one of the best examples of Polish Gothic architecture. Standing 80 m tall, it is particularly famous for its wooden altarpiece carved by Wit Stwosz. Some of its monumental polychrome murals were designed by Poland's leading history painter, Jan Matejko. In 1978 it became a UNESCO World Heritage Site alongside the Historic Centre of Kraków.
+    image: route/athena1/paragraphs/p7.jpg
+    image_description: Cathedral vault
+- model: routes.paragraph
+  pk: 8
+  fields:
+    order: 2
+    route_point: 6
+    text: On every hour, 24 hours a day, 365 days a year, a trumpet signal — called the Hejnał mariacki — is played from the top of the taller of Saint Mary's two towers. The plaintive tune breaks off in mid-stream, to commemorate a famous 13th century trumpeter who was shot in the throat while sounding the alarm before a Mongol attack on the city. The noon-time hejnał is heard across Poland and abroad broadcast live by the Polish national Radio 1 Station.
+    image: route/athena1/paragraphs/p8.jpg
+    image_description: Wit Stwosz Altar
+- model: routes.paragraph
+  pk: 9
+  fields:
+    order: 3
+    route_point: 6
+    text: The Veit Stoss Altarpiece is about 13 m high and 11 m wide when the panels of the triptych are completely opened. The realistically sculptured figures are 2.7 m, each one was carved out of a tree trunk of lime. Other parts of the altarpiece are made from oak wood, and the background is constructed of larch wood. When closed, the panels show 12 scenes of the life of Jesus and Mary.
+    image: ''
+    image_description: ''
+- model: routes.routepoint
+  pk: 7
+  fields:
+    name: Czartoryski Museum
+    longitude: '19.9375244'
+    latitude: '50.0646918'
+    short_description: One of the country's oldest museums. The initial collection was formed by Princess Izabela Czartoryska.
+    google_maps_url: https://www.google.com/maps/place/Muzeum+Ksi%C4%85%C5%BC%C4%85t+Czartoryskich/@50.0646918,19.9375244,17z/data=!3m1!4b1!4m6!3m5!1s0x47165b0fda2de6bf:0x360b5554dfad8be8!8m2!3d50.0646918!4d19.9400993!16zL20vMDV2MXF5?entry=ttu
+    route: 4
+    order: 4
+    description: Kolejne miejsce
+    hero_story: Athena had once a mortal friend. Her name was Izabela Czartoryska. They loved to admire art and shared a passion of collecting it. Izabela wanted to save great masterpieces from damage and there for purchased a lot of them. Nowadays accordingly to her final wish - also you can see them in the museum founded by Czartoryski Family.
+    hero_quote: Looks amazing!
+    main_image: route/athena1/points/route_point7.jpg
+    audio: ''
+- model: routes.paragraph
+  pk: 10
+  fields:
+    order: 1
+    route_point: 7
+    text: Princess Izabela Czartoryska founded the museum in Puławy to preserve Polish heritage in keeping with her motto, "The Past to the Future." The first objects in her "Temple of Memory" of 1796 were trophies commemorating the victory against the Turks at the Battle of Vienna in 1683. The Museum collections feature historical artifacts from the recovered treasures of the Wawel Cathedral, the Royal Castle and other objects donated by Polish noble families.
+    image: route/athena1/paragraphs/p10.jpg
+    image_description: Izabela Czartoryska
+- model: routes.paragraph
+  pk: 11
+  fields:
+    order: 2
+    route_point: 7
+    text: Izabela also bought the treasures of the Duke of Brabant, including his books which were considered a particular highlight of the collection. Influenced by the Romantic artistic movement, she also acquired objects of sentimental significance that represented the glory and misery of human life. Among these were Shakespeare's chair, fragments from the alleged graves of Romeo and Juliet in Verona, ashes of El Cid and Ximena from the Cathedral of Burgos, and relics of Abelard and Heloise, and Petrarch and his Laura.
+    image: route/athena1/paragraphs/p11.jpg
+    image_description: Lady with an Ermine, Leonardo da Vinci
+- model: routes.paragraph
+  pk: 12
+  fields:
+    order: 3
+    route_point: 7
+    text: The Lady with an Ermine is a portrait painting widely attributed to the Italian Renaissance artist Leonardo da Vinci. Dated to c. 1489–1491, the work is painted in oils on a panel of walnut wood. Its subject is Cecilia Gallerani, a mistress of Ludovico Sforza ("Il Moro"), Duke of Milan; Leonardo was painter to the Sforza court in Milan at the time of its execution. It is the second of only four surviving portraits of women painted by Leonardo, the others being Ginevra de' Benci, La Belle Ferronnière and the Mona Lisa.
+    image: ''
+    image_description: ''
+- model: routes.routepoint
+  pk: 8
+  fields:
+    name: St. Florian's Gate
+    longitude: '19.9388202'
+    latitude: '50.0648602'
+    short_description: It is one of the best-known Polish Gothic towers, and a focal point of Kraków's Old Town.
+    google_maps_url: https://www.google.com/maps/place/Brama+Floria%C5%84ska/@50.0648602,19.9388202,17z/data=!3m1!4b1!4m6!3m5!1s0x47165b103b2df85b:0xffc4fd6282924bd7!8m2!3d50.0648602!4d19.9413951!16s%2Fm%2F027jtmz?entry=ttu
+    route: 4
+    order: 5
+    description: Kolejne miejsce
+    hero_story: This is the only remaining part of Cracow city walls and one of the favourite spots of Athena in here.
+    hero_quote: Last but not least!
+    main_image: route/athena1/points/route_point8.jpg
+    audio: ''
+- model: routes.paragraph
+  pk: 13
+  fields:
+    order: 1
+    route_point: 8
+    text: Kraków's Royal Road begins at St. Florian's Gate, and the gate is a terminating vista at its north end. Through it once entered kings and princes, foreign envoys and distinguished guests, and parades and coronation processions. They travelled up ulica Floriańska (St. Florian's Street) to the Main Market Square, and on up ulica Grodzka (Castle Street) to Wawel Castle.
+    image: route/athena1/paragraphs/p13.jpg
+    image_description: Artists selling their works next to the gate
