@@ -11,9 +11,31 @@ from hackyeah.routes.models import (
 from hackyeah.routes.services import PointGeocodingService
 
 
+class ParagraphInline(admin.TabularInline):
+    model = Paragraph
+    extra = 0
+    can_delete = False
+    show_change_link = True
+
+
+@admin.register(Paragraph)
+class ParagraphAdmin(admin.ModelAdmin):
+    list_display = (
+        "order",
+        "display_route",
+        "route_point",
+    )
+    list_filter = ("route_point__route",)
+
+    @admin.display(description="Route")
+    def display_route(self, obj):
+        return obj.route_point.route
+
+
 @admin.register(RoutePoint)
 class RoutePointAdmin(admin.ModelAdmin):
     list_display = ("name", "display_location", "route")
+    inlines = (ParagraphInline,)
 
     @admin.display(description="Location")
     def display_location(self, obj):
@@ -46,20 +68,6 @@ class RouteAdmin(admin.ModelAdmin):
 @admin.register(City)
 class CityAdmin(admin.ModelAdmin):
     pass
-
-
-@admin.register(Paragraph)
-class ParagraphAdmin(admin.ModelAdmin):
-    list_display = (
-        "order",
-        "display_route",
-        "route_point",
-    )
-    list_filter = ("route_point__route",)
-
-    @admin.display(description="Route")
-    def display_route(self, obj):
-        return obj.route_point.route
 
 
 @admin.register(Hero)
