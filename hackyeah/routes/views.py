@@ -11,6 +11,7 @@ from hackyeah.routes.serializers import (
     RoutePointSerializer,
     RoutePointVisitSerializer,
     RouteSerializer,
+    ComicsDownloadURLSerializer,
 )
 
 
@@ -39,6 +40,14 @@ class RoutesModelViewSet(ReadOnlyModelViewSet):
             route_point_id=serializer.data["point"], user=request.user
         )
         return Response(status=status.HTTP_201_CREATED)
+
+    @action(detail=True, methods=["get"])
+    @swagger_auto_schema(responses={status.HTTP_200_OK: ComicsDownloadURLSerializer()})
+    def download_comics(self, request, pk: int):
+        data = {
+            "url": self.get_object().comics_url,
+        }
+        return Response(ComicsDownloadURLSerializer(data).data)
 
     @swagger_auto_schema(
         request_body=no_body, responses={status.HTTP_204_NO_CONTENT: "deleted"}

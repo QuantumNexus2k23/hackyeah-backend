@@ -105,3 +105,10 @@ class RoutePointVisitSerializer(serializers.ModelSerializer):
                 "Route point does not belong to the route"
             )
         return attrs
+
+
+class ComicsDownloadURLSerializer(serializers.Serializer):
+    url = serializers.URLField()
+
+    class Meta:
+        fields = ("url",)

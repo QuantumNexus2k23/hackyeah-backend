@@ -41,6 +41,7 @@ class Route(models.Model):
         choices=RouteType.choices, max_length=20, default=RouteType.historical
     )
     hero = models.ForeignKey(Hero, on_delete=models.CASCADE, blank=True, null=True)
+    comics_url = models.URLField(blank=True, null=True, max_length=1000)
 
     def __str__(self):
         return self.name

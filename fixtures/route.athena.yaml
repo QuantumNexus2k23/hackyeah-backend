@@ -13,6 +13,7 @@
     duration: 01:00:00
     route_type: historical
     hero: 1
+    comics_url: https://op.europa.eu/o/opportal-service/download-handler?identifier=8c903eb4-20dc-11ec-bd8e-01aa75ed71a1&format=pdf&language=en&productionSystem=cellar&part=
 - model: routes.routepoint
   pk: 4
   fields:
