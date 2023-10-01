@@ -8,7 +8,7 @@
   fields:
     city: 1
     name: Athena's journey
-    description: Athena's journey
+    description: Go on the adventure with the brave Athena and discover wonders of the Cracow Old Town.\n\nLet Athena tell you a story how she conquer the dragon and took the old town back for the Cracow residents or something.\n\nYou’ll see the old Royal Castle, beautiful Slowacki’s theatre, you’ll stroll through the main square gardens and many more!
     image: https://s3-alpha-sig.figma.com/img/a564/b713/0893da39487d0c384d0b3db5b0cda6c2?Expires=1696809600&Signature=oCZGr9EQ7vH0lA-AKypzxkodb98LyyzMp~OUJFvfhkxw05AoHWdMjQNDoSUBskaXRKyZr5y~bX6wnPVLxd-Kx5dSErFrz0PAWcZQsjoKK-1WN0SdSpAN~4I~sXJvkicv9QH2l3DPmF4KihGZHRFFxd8fqklYeJWaALLHlbkfpsP0qzA4lzxEiI~l6RRW63sEhC4hVYGQm4ZHP52WmjMHZEe1AkGinMAC9WifYlkZgVhHhe0gju8PJMqLOHNmqoYpxOxua3mP8uAU~zf-AevWnNUP4p0iXzc707XmV9KfOwaUCdSMzNh9lxMcMeXgVLJgBGtqXPAF~ah2pMOFJVcyGg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
     duration: 01:00:00
     route_type: historical
@@ -33,39 +33,6 @@
     hero_quote: Come and hear my story!
     main_image: https://s3-alpha-sig.figma.com/img/f20b/3335/1c9b0709d0a3ac787eaca5e16efc0f53?Expires=1696809600&Signature=Q3W7XOex6GrkHTe2XwvXasIdCkufBgtnT0DVbm~H17f~qbf8EOpYX-ifrtZBA04U2PDzs92uIy92sUa-pAul~uC4xcNtCVGLJctqSNI-onOKLhO8fcCYRoa5u0cWPllKMcnXYzh50M1nmtoeU6kJnj7hQaW2jrhV7ua1t3w83KL-ZRUqFbxpixg1pZkek3f-Fgrv1PxJHB-pQtyjrglfZY6OcBKJp5NFAbIWuDer6dGBcgqT45JaznoYbq5SPp7tndPG2r6ovkJYIw5xM72jJRs~gHGVoPPG9O4FMRZps2ERh5Uubh7yfmKe6SLm2tnUAuB-f5nt~oaBR-797kd0uw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
     audio: ''
-- model: routes.routepoint
-  pk: 5
-  fields:
-    name: Second Point
-    longitude: '19.933732'
-    latitude: '50.054437'
-    short_description: Starting point
-    google_maps_url: https://www.google.com/maps/place/Baszta+Z%C5%82odziejska/@50.0544368,19.9337323,17.59z/data=!4m9!1m2!2m1!1swawel!3m5!1s0x47165b6d97535d45:0x10a11cb058374021!8m2!3d50.0535896!4d19.9337434!16s%2Fg%2F121fx494?hl=pl-PL&entry=ttu
-    route: 4
-    order: 2
-    description: Kolejne miejsce
-    hero_story: Her story related to the castle or not. Her story related to the castle
-      or not.Her story related to the castle or not.Her story related to the castle
-      or not.Her story related to the castle or not.Her story related to the castle
-      or not.Her story related to the castle or not.Her story related to the castle
-      or not.
-    hero_quote: Is this interesting?
-    main_image: https://s3-alpha-sig.figma.com/img/f20b/3335/1c9b0709d0a3ac787eaca5e16efc0f53?Expires=1696809600&Signature=Q3W7XOex6GrkHTe2XwvXasIdCkufBgtnT0DVbm~H17f~qbf8EOpYX-ifrtZBA04U2PDzs92uIy92sUa-pAul~uC4xcNtCVGLJctqSNI-onOKLhO8fcCYRoa5u0cWPllKMcnXYzh50M1nmtoeU6kJnj7hQaW2jrhV7ua1t3w83KL-ZRUqFbxpixg1pZkek3f-Fgrv1PxJHB-pQtyjrglfZY6OcBKJp5NFAbIWuDer6dGBcgqT45JaznoYbq5SPp7tndPG2r6ovkJYIw5xM72jJRs~gHGVoPPG9O4FMRZps2ERh5Uubh7yfmKe6SLm2tnUAuB-f5nt~oaBR-797kd0uw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
-    audio: ''
-- model: routes.paragraph
-  pk: 1
-  fields:
-    order: 2
-    route_point: 4
-    text: "The current castle was built in the 14th century, and expanded over the
-      next hundreds of years. \r\nIn the beginning of the 16th century King Sigismund
-      I the Old rebuild the royal residence int the Renaissance style. The complex
-      consists of numerous buildings of great historical and national importance,
-      including the Wawel Cathedral where Polish monarchs were crowned and buried.
-      In 1978 Wawel was declared the first World Heritage Site as part of the Historic
-      Centre of Kraków."
-    image: https://s3-alpha-sig.figma.com/img/1b30/9397/0f604bad58df6eee65c6d28c083a8dec?Expires=1696809600&Signature=ebop3DBPsUjMWE0qffh8V5Xyjq49DCrTvU7PnHnkOfbnYluWizOjBBEtraB9zY0Zw2H0ezyNi5B1bfOghzV4frF0PACqWxsFqbc53BNbHt~8YGTTtp-oRPG~85cVq60klfjDMRJQW6iAmX-YXgOZDhl~QxXbX~9aJ8RhQuhzPkiCJlpnG6L5p0zRK1oa6xE~xQsaPGLyF9p1l-p7wbevQKxuhxmiQU77vNU2yioNnke5xoFtCWhi4J17bz8PXZafeY4dRmK6xLaDRYAYQKfXb6n6osqAFuQJpeSnBiBzLWMvrob78ZoKtGgZIwJrYwWmBwJV22JQEkVhvUazpb7wLQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
-    image_description: Sigismund's Golden Chapel
 - model: routes.paragraph
   pk: 2
   fields:
@@ -81,6 +48,20 @@
     image: https://s3-alpha-sig.figma.com/img/de5b/6a8b/c5f470acbba35f505f762a1a668fea95?Expires=1696809600&Signature=jVn1lmXYjVnUKq67Vn667Nfz3vejJEXrB6McaYDEnjFieCBLXD13ZPusy873Xf3gU0S9m4tYeUbaciF-9XlhVC1IUGtJ4PygaTteMMTxpewhhGj6jpqxCrYn03fuwX01NUjr9eGnbP~k9d8fBtosujGYZpxduGdU3mWD~uu0DMKnXFtryameP~zDYKvfi7ldhh3HTb2zE9QNOXRmcgJjc00c8thi5K0gBIKyKPmh4Ad82pEc1SobfQ7Cyu9LuWF9~7c97gmixFybLh7HYLlzPagkkSgYxy1EYfABWpwfu-0~ZmdiASXgFCsnGIqaJcPCTWpQIPuQJmSVXOV79p-~GA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
     image_description: Sigismund’s Tower and Kosciuszko Monument
 - model: routes.paragraph
+  pk: 1
+  fields:
+    order: 2
+    route_point: 4
+    text: "The current castle was built in the 14th century, and expanded over the
+      next hundreds of years. \r\nIn the beginning of the 16th century King Sigismund
+      I the Old rebuild the royal residence int the Renaissance style. The complex
+      consists of numerous buildings of great historical and national importance,
+      including the Wawel Cathedral where Polish monarchs were crowned and buried.
+      In 1978 Wawel was declared the first World Heritage Site as part of the Historic
+      Centre of Kraków."
+    image: https://s3-alpha-sig.figma.com/img/1b30/9397/0f604bad58df6eee65c6d28c083a8dec?Expires=1696809600&Signature=ebop3DBPsUjMWE0qffh8V5Xyjq49DCrTvU7PnHnkOfbnYluWizOjBBEtraB9zY0Zw2H0ezyNi5B1bfOghzV4frF0PACqWxsFqbc53BNbHt~8YGTTtp-oRPG~85cVq60klfjDMRJQW6iAmX-YXgOZDhl~QxXbX~9aJ8RhQuhzPkiCJlpnG6L5p0zRK1oa6xE~xQsaPGLyF9p1l-p7wbevQKxuhxmiQU77vNU2yioNnke5xoFtCWhi4J17bz8PXZafeY4dRmK6xLaDRYAYQKfXb6n6osqAFuQJpeSnBiBzLWMvrob78ZoKtGgZIwJrYwWmBwJV22JQEkVhvUazpb7wLQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    image_description: Sigismund's Golden Chapel
+- model: routes.paragraph
   pk: 3
   fields:
     order: 3
@@ -95,3 +76,43 @@
       and the 22nd most visited art museum in the world.
     image: ''
     image_description: ''
+- model: routes.routepoint
+  pk: 5
+  fields:
+    name: Rynek Underground
+    longitude: '19.9353046'
+    latitude: '50.0619828'
+    short_description: The museum is situated below the market square of the city. It was opened in 2010.
+    google_maps_url: https://www.google.com/maps/place/Rynek+Podziemny/@50.0619828,19.9353046,17z/data=!3m1!4b1!4m6!3m5!1s0x47165b1208c81111:0xa52ade5a014fe7a3!8m2!3d50.0619828!4d19.9378795!16s%2Fm%2F0cnxxf9?hl=pl-PL&entry=ttu
+    route: 4
+    order: 2
+    description: Kolejne miejsce
+    hero_story: Athena cares for the historical heritage. The city of Cracow is very old and has many underground layers as it turned out during renovation works. Objects like jewellery, coins and weapon are often found while digging. Athena came up with an idea and whispered it into the ears of architects and museum curators.
+    hero_quote: Let's see!
+    main_image: https://s3-alpha-sig.figma.com/img/29e4/adde/957f2855efa02c470f2fd716235fd8cc?Expires=1696809600&Signature=UIyxziW3MtEZdtFuOrI8FWhSU7wak9Oq9WGOzrvMWztKmSG~iGp9FGiRCKLanCKkNQ1sCU-FmOhdvCvTyxgHY~4Is6pwaS09HNT71fk6SE3rE0SoGz5GvttUqzv6hU~bSCZpvu9rFTvYY2JVp6n1uNmMVlNE-ccjwvV0g2WkVA9AwdEh4aJQgJsnavINGstl0kQ2EeS0NclWz6crQnp1sQp2appqpDRoupTfPQAHkYZdBHsc8ABgxtE7R4msF1rQNiepbp0AIozlNjnPh2UEy1Cgw8uW-jLaGfVC632k2KZwFIns06dIXEeQ7LWL9EF-G0l~8k7edspnY0h72s82Yw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    audio: ''
+- model: routes.paragraph
+  pk: 2
+  fields:
+    order: 1
+    route_point: 5
+    text: The Rynek Underground is one of the youngest Cracow’s museums. Modern and keeping up with the new standards, but perfectly recreating atmosphere of the city existing in the previous centuries. The main exhibit “In the Footsteps of Krakow’s European Identity” was launched three days after the museum's opening. It uses holograms constructed by using projectors, alongside fog machines and screens.
+    image: https://s3-alpha-sig.figma.com/img/e2a8/44e1/e49bb1f91a777247ccdf55b45a936e77?Expires=1696809600&Signature=ET5noxBbQGL6iY6vWqAfmEFFVdRt-9Y5evovlGNyxZQI6e2tzQ-TS0eM6uUr3Eu6Od88g0IxeTzRG8g-h2ib9-1MRIANdKn~yQ919A8-HXoYeyuT7gg~3MGBYVVU75fu52n7YV5-BxR17T3B~fpg1xEYBeeZ1E1XJ3crIIcLnWOkVA2~NXH6H~h8CCFHqW1Q8TDqF3~eCtbcPRk1nqOh7ffyxfOZVJIlcDC1b9-3r6Q3Erxq0-Bkq1t46oYJPTK10UTX2cJgueC7vEbhzNON9FMYbuRTozFdkU0MkHah3UH9t16hE4aYcWUUo-LOiB1X0i-UnltUaZbW7MkpPx-Bcg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    image_description: Mariacki Church visible through celling window
+- model: routes.paragraph
+  pk: 1
+  fields:
+    order: 2
+    route_point: 5
+    text: The Rynek Underground exhibition presents not only Cracow’s rich history, but also the connections between the city and mediaeval Europe’s chief centres of trade and culture. Moreover, it portrays the significance of the capital of Poland in the operation of the Hanseatic League. The real historical objects on display, just to mention 14th-century coins, decorations, and pottery, are proof of the European cultural and trade exchange that continued here incessantly for hundreds of years.
+    image: https://s3-alpha-sig.figma.com/img/4b81/889d/9f236a2589076a75926a070e84e461a2?Expires=1696809600&Signature=AVMhGWiY732Ip387zxD4Sh26gDuPfZhSCN~oSv0FjaCG0qjWcNjeLcL4Vo--NvrygKHVLND5auEpr8C~R1BwKHlj2KPl0f2guuvzoWHhTtyOps~z4t64qv2GMhVAPmPpSRc8L2lODVTc0sRBAYZUo4JhIl6mOB-F1fCp3YjnvKBov06wLbUXzemjk8uvUxVkzVE9ngKw0RbaqX9wrrxDkdJAt7WPAtKhiNUtmbgsp5NdN2EebcfNo5U3rCLe5-UYVnF84zvjn7PEOQIcmD-SNsahMQ2Hf6Q0ZpGOS5Pv6ROSDJ23HaXqfEpU9ukHYHYhnV2FLeuPtRRdmKegp17r8A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    image_description: Rynek Underground Museum
+- model: routes.paragraph
+  pk: 3
+  fields:
+    order: 3
+    route_point: 5
+    text: The tourist route under the Main Market Square leads between the stone and brick walls of the cellars of former trading sites, including the Kramy Bolesławowe Stalls, Kramy Bogate Stalls, the Great Scales, and the Cloth Hall. Another curio is the preserved stretches of transport routes, which provide an idea of what the mediaeval technology of road building was. Numerous objects make it possible to imagine daily life in Kraków a few centuries ago. The exhibition shows, among others, mediaeval tools, historical coins, clay figures, decorations, dice and toiletry articles used over 600 years ago, together with the Tartar arrowheads, and beads and medallions from the Orient.
+    image: ''
+    image_description: ''
+
