@@ -1,0 +1,362 @@
+- model: routes.route
+  pk: 104
+  fields:
+    city: 1
+    name: Explore impact of EU funds in tourism in Cracow
+    description: Tour aiming to show how EU funds have impacted tourism in Cracow.
+    image: route/images/2023/09/30/1.png
+    duration: 02:00:00
+    route_type: touristical
+    hero: null
+# STARTING POINT
+- model: routes.routepoint
+  pk: 104
+  fields:
+    name: Starting Point
+    longitude: '19.9347428'
+    latitude: '50.0617909'
+    short_description: Vaults of the Main Square
+    google_maps_url: https://www.google.com/maps/place/Rynek+Podziemny/@50.0617909,19.9347428,17z/data=!4m10!1m2!2m1!1s%C5%9Aladem+europejskiej+to%C5%BCsamo%C5%9Bci+Krakowa+-+szlak+turystyczny+po+podziemiach+Rynku+G%C5%82%C3%B3wnego!3m6!
+    route: 104
+    order: 1
+    description:
+      Place where we start our journey
+      https://mapadotacji.gov.pl/projekty/679725/
+    hero_story: ""
+    hero_quote: ""
+    main_image: route/tourism/points/1.jpg
+    audio: ''
+- model: routes.paragraph
+  pk: 101
+  fields:
+    order: 1
+    route_point: 104
+    text: >
+      Rynek Podziemny, also known as the Underground Market, is a fascinating historical site nestled
+      beneath the bustling streets of Krakow, Poland.
+    image: ""
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 102
+  fields:
+    order: 2
+    route_point: 104
+    text: >
+      Covering approximately 5,000 square meters, this underground marvel offers visitors a unique
+      opportunity to step back in time and explore Krakow's medieval history.
+    image: ""
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 103
+  fields:
+    order: 3
+    route_point: 104
+    text: >
+      One of the main attractions within Rynek Podziemny is the archaeological and architectural
+      reserve, where relics of ancient market structures, historic roadways, and other archaeological
+      treasures are meticulously preserved and showcased.
+    image: ""
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 104
+  fields:
+    order: 4
+    route_point: 104
+    text: >
+      As you wander through this subterranean labyrinth, you'll gain insight into Krakow's historical
+      significance as one of the most important centers for trade, culture, finance, and more during
+      the medieval period.
+    image: ""
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 105
+  fields:
+    order: 5
+    route_point: 104
+    text: >
+      With innovative multimedia presentations, reconstructions, and interactive exhibits, Rynek
+      Podziemny offers a captivating and educational experience that brings the past to life for all
+      who explore its depths.
+    image: ""
+    image_description: ""
+
+# SECOND POINT
+- model: routes.routepoint
+  pk: 105
+  fields:
+    name: Founder's House and Infirmary in the Camaldolese Monastery in Krakow.
+    longitude: "19.8378321"
+    latitude: "50.045664"
+    short_description: >
+      EU financed the project of modernization and adaptation of the former Founder's House 
+      and Infirmary in the Camaldolese Monastery in Krakow.
+    google_maps_url: https://www.google.com/maps/place/Ko%C5%9Bci%C3%B3%C5%82+Wniebowzi%C4%99cia+NMP+w+Krakowie/@50.0456641,19.8378321,17z
+    route: 104
+    order: 2
+    description: >
+      The Camaldolese Monastery in Kraków, dating back to the 17th century,
+      has been meticulously preserved and modernized with the support of EU funds, drawing tourists
+      and serving as a center for cultural promotion while offering a serene escape for contemplation.
+      https://mapadotacji.gov.pl/projekty/551623
+    hero_story: ""
+    hero_quote: ""
+    main_image: route/tourism/points/2.jpg
+    audio: ''
+
+- model: routes.paragraph
+  pk: 106
+  fields:
+    order: 1
+    route_point: 105
+    text: >
+      There are only nine Camaldolese monasteries in the world with about 80 monks, half of whom live in Poland.
+      Standing on top of a forested hill in the south-west part of Kraków called Bielany, the Camaldolese Monastery
+      is one of the finest examples of sacred architecture to be found anywhere.
+    image: ""
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 107
+  fields:
+    order: 2
+    route_point: 105
+    text: >
+      The structure, beautifully lit-up at night, is always well visible from the ring Road around Kraków,
+      especially at the intersection with the River Vistula. It is fenced with a long stone wall, which
+      guarantees peace and quiet in the monastic grounds. Work, prayer, reading, contemplation, atonement,
+      fasting, solitude, silence – these are the rules of St. Benedict followed by the Camaldolese brothers.
+    image: ""
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 108
+  fields:
+    order: 3
+    route_point: 105
+    text: >
+      Dating from the early 17th century, the monastery is one of the world’s very few historic buildings
+      preserved in such an excellent condition and still used according to its original purpose. Nevertheless,
+      a large part of the complex had not been repaired from the very beginning until quite recently.
+    image: ""
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 109
+  fields:
+    order: 4
+    route_point: 105
+    text: >
+      Despite a solid structure, the buildings were slowly falling into ruin. This changed in 2007-2008 with
+      the arrival of EU funds which allowed the renovation and modernization of the complex, especially
+      the two-storey House of the Founder Mikołaj Wolski, and the four-storey infirmary, both of which
+      received new roofing.
+    image: ""
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 110
+  fields:
+    order: 5
+    route_point: 105
+    text: >
+      The works also covered the modernization of the cloister garth, partial restoration of the 17th-century
+      hanging garden adjacent to the infirmary, and conservation of the altar, two stone fireplaces, a lavabo,
+      nine stone portals, and the polychrome paintings.
+    image: route/tourism/paragraphs/110.jpg
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 111
+  fields:
+    order: 6
+    route_point: 105
+    text: >
+      The project contributed to a growing interest on the part of tourists in the eremitic life of the Camaldolese.
+      This place attracts nearly 130,000 visitors each year. The establishment runs the Camaldolese Cultural Centre
+      designed to spread knowledge about the monastery and popularize the Polish cultural heritage in Poland and abroad.
+    image: ""
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 112
+  fields:
+    order: 7
+    route_point: 105
+    text: >
+      Held here, exhibitions, lectures, and seminars enjoy a growing popularity. The monastery also caters for those
+      who want to take a break from everyday problems and indulge in quiet contemplation in search of internal balance
+      and harmony.
+    image: ""
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 113
+  fields:
+    order: 8
+    route_point: 105
+    text: >
+      A week’s stay is enough to recharge your batteries.
+    image: ""
+    image_description: ""
+
+# THIRD POINT
+- model: routes.routepoint
+  pk: 106
+  fields:
+    name: Benedictine Abbey in Tyniec
+    longitude: "19.7996036"
+    latitude: "50.0188018"
+    short_description: >
+      EU financed the project of protection of world cultural heritage through
+      the revitalisation of the historic Benedictine Abbey in Tyniec
+    google_maps_url: https://www.google.com/maps/place/Opactwo+Benedyktyn%C3%B3w+w+Ty%C5%84cu/@50.0188018,19.7996036,17z/data=!4m14!1m7!3m6!1s0x47165e8981313759:0xb9b7b6ab509df4e6!2sOpactwo+Benedyktyn%C3%B3w+w+Ty%C5%84cu!8m2!3d50.0188018
+    route: 104
+    order: 3
+    description: >
+      The recently renovated wing of Tyniec Abbey, known as the "great ruin,"
+      has been transformed to preserve historical elements and now serves as 
+      the Benedictine Institute of Culture, housing exhibits, multimedia rooms, 
+      and flexible spaces for various activities, while also providing a "Guest House" for silent reflection.
+      https://mapadotacji.gov.pl/projekty/553438/
+    hero_story: ""
+    hero_quote: ""
+    main_image: route/tourism/points/3.jpg
+    audio: ''
+
+- model: routes.paragraph
+  pk: 114
+  fields:
+    order: 1
+    route_point: 106
+    text: >
+      There are only nine Camaldolese monasteries in the world with about 80 monks, half of whom live in Poland.
+      Standing on top of a forested hill in the south-west part of Kraków called Bielany, the Camaldolese Monastery is one of the finest examples of sacred architecture to be found anywhere.
+      The structure, beautifully lit-up at night, is always well visible from the ring Road around Kraków, especially at the intersection with the River Vistula.
+      It is fenced with a long stone wall, which guarantees peace and quiet in the monastic grounds.
+      Work, prayer, reading, contemplation, atonement, fasting, solitude, silence – these are the rules of St Benedict followed by the Camaldolese brothers.
+    image: "route/tourism/paragraphs/114.jpg"
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 115
+  fields:
+    order: 2
+    route_point: 106
+    text: >
+      Dating from the early 17th century, the monastery is one of the world’s very few historic buildings preserved in such an excellent condition and still used according to its original purpose.
+      Nevertheless, a large part of the complex had not been repaired from the very beginning until quite recently.
+    image: ""
+    image_description: "route/tourism/paragraphs/115.jpg"
+
+- model: routes.paragraph
+  pk: 116
+  fields:
+    order: 3
+    route_point: 106
+    text: >
+      Despite a solid structure, the buildings were slowly falling into ruin.
+      This changed in 2007-2008 with the arrival of EU funds which allowed the renovation and modernization of the complex, especially the two-storey House of the Founder Mikołaj Wolski, and the four-storey infirmary, both of which received new roofing.
+      The works also covered the modernization of the cloister garth, partial restoration of the 17th-century hanging garden adjacent to the infirmary, and conservation of the altar, two stone fireplaces, a lavabo, nine stone portals and the polychrome paintings.
+    image: ""
+    image_description: "route/tourism/paragraphs/116.jpg"
+
+- model: routes.paragraph
+  pk: 117
+  fields:
+    order: 4
+    route_point: 106
+    text: >
+      The project contributed to a growing interest on the part of tourists in the eremitic life of the Camaldolese.
+      This place attracts nearly 130,000 visitors each year.
+      The establishment runs the Camaldolese Cultural Centre designed to spread knowledge about the monastery and popularize the Polish cultural heritage in Poland and abroad.
+      Held here, exhibitions, lectures, and seminars enjoy a growing popularity.
+      The monastery also caters for those who want to take a break from everyday problems and indulge in a quiet contemplation in search of internal balance and harmony.
+      A week’s stay is enough to recharge your batteries.
+    image: "route/tourism/paragraphs/117.jpg"
+    image_description: ""
+
+# FOURTH POINT
+- model: routes.routepoint
+  pk: 107
+  fields:
+    name: Stanisław Lem's Garden of Experiences
+    longitude: "19.995230"
+    latitude: "50.0671895"
+    short_description: >
+      EU financed the project of extending the Stanisław Lem's Garden of Experiences
+    google_maps_url:   https://www.google.com/maps/place/Ogr%C3%B3d+Do%C5%9Bwiadcze%C5%84+im.+Stanis%C5%82awa+Lema/@50.0671895,19.99523,17.38z/data=!4m6!3m5!1s0x47165b3955a4265f:0xf0096cce46338b3d!8m2!3d50.0672903!4d19.9971208!16s%2Fg%2F12276_r5?entry=ttu
+    route: 104
+    order: 4
+    description: >
+      The Stanisław Lem Experimental Garden in Poland is an educational
+      park affiliated with the Museum of Engineering and Technology,
+      offering interactive physics experiments, expanding into various fields of knowledge,
+      and featuring unique attractions like a six-meter rocket with slides and a specialized 
+      tightrope-riding bicycle to engage visitors in science education through playful experiences.
+      https://mapadotacji.gov.pl/projekty/692433/
+    hero_story: ""
+    hero_quote: ""
+    main_image: route/tourism/points/4.jpg
+    audio: ''
+
+- model: routes.paragraph
+  pk: 118
+  fields:
+    order: 1
+    route_point: 107
+    text: >
+      The Camaldolese Monastery in Kraków stands atop a forested hill called Bielany, 
+      a sacred architectural gem beautifully lit up at night and visible from the city's ring road.
+    image: "route/tourism/paragraphs/118.jpg"
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 119
+  fields:
+    order: 2
+    route_point: 107
+    text: >
+      This historic 17th-century monastery is remarkably well-preserved and
+      continues to serve its original purpose, following the rules of St. Benedict,
+      including work, prayer, solitude, and silence.
+    image: ""
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 120
+  fields:
+    order: 3
+    route_point: 107
+    text: >
+      EU funds in 2007-2008 breathed new life into the monastery,
+      renovating and modernizing its complex, from the House of the Founder Mikołaj Wolski
+      to the infirmary and the cloister garth.
+    image: ""
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 121
+  fields:
+    order: 4
+    route_point: 107
+    text: >
+      This project sparked tourist interest in the eremitic life of the Camaldolese,
+      drawing around 130,000 visitors annually. The Camaldolese Cultural Centre promotes
+      Polish cultural heritage and hosts exhibitions, lectures, and seminars.
+    image: ""
+    image_description: ""
+
+- model: routes.paragraph
+  pk: 122
+  fields:
+    order: 5
+    route_point: 107
+    text: >
+      The monastery offers a tranquil retreat for those seeking inner balance and harmony,
+      with just a week's stay providing an opportunity to recharge one's batteries.
+    image: ""
+    image_description: ""
