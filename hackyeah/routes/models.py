@@ -6,11 +6,11 @@ from django.db import models
 from hackyeah.routes.constants import RouteType
 from hackyeah.routes.entities import GeocodedPlace
 
-ROUTE_IMAGE_UPLOAD_TO = Path("route", "images", "%Y", "%m", "%d")
-ROUTE_POINTS_IMAGE_UPLOAD_TO = Path("route_points", "images", "%Y", "%m", "%d")
-ROUTE_POINTS_AUDIO_UPLOAD_TO = Path("route_points", "audio", "%Y", "%m", "%d")
-HERO_IMAGE_UPLOAD_TO = Path("route_points", "audio", "%Y", "%m", "%d")
-PARAGRAPH_IMAGE_UPLOAD_TO = Path("route_points", "audio", "%Y", "%m", "%d")
+ROUTE_IMAGE_UPLOAD_TO = Path("route", "images")
+ROUTE_POINTS_IMAGE_UPLOAD_TO = Path("route_points", "images")
+ROUTE_POINTS_AUDIO_UPLOAD_TO = Path("route_points", "audio")
+HERO_IMAGE_UPLOAD_TO = Path("route_points", "image")
+PARAGRAPH_IMAGE_UPLOAD_TO = Path("route_points", "image")
 
 
 class Hero(models.Model):

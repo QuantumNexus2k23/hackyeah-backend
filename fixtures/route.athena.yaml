@@ -2,34 +2,53 @@
   pk: 1
   fields:
     name: Athena
-    image: route_points/audio/2023/09/30/atena.png
+    image: route_points/image/atena.png
 - model: routes.route
   pk: 4
   fields:
     city: 1
     name: Athena's journey
     description: Athena's journey
-    image: route/images/2023/09/30/1.png
+    image: route/images/route1.png
     duration: 01:00:00
     route_type: historical
     hero: 1
 - model: routes.routepoint
   pk: 4
   fields:
-    name: Starting Point
+    name: Wawel Royal Castle
     longitude: '19.932848'
     latitude: '50.054112'
-    short_description: Starting point
+    short_description: Fortified residency which was a home to many royals reigning
+      in Poland.
     google_maps_url: https://www.google.com/maps/place/Zamek+Kr%C3%B3lewski+na+Wawelu/@50.0541115,19.9328481,17z/data=!3m1!4b1!4m6!3m5!1s0x47165b6d053619f5:0xacb9dfc4d67fa598!8m2!3d50.0541115!4d19.935423!16s%2Fm%2F0cp08lw?entry=ttu
     route: 4
     order: 1
     description: Miejsce gdzie zaczynamy
+    hero_story: Athena once came to the city of Cracow to admire the castle. She is
+      very fond of architecture and always tries to protect it from damage. During
+      that time she helped a young cobbler, named Dratewka. A few years before, an
+      old and nasty dragon had settled in the cave inside the Wawel Hill.
+    hero_quote: Come and hear my story!
+    main_image: route_points/images/route_point1.png
+    audio: ''
+- model: routes.routepoint
+  pk: 5
+  fields:
+    name: Second Point
+    longitude: '19.933732'
+    latitude: '50.054437'
+    short_description: Starting point
+    google_maps_url: https://www.google.com/maps/place/Baszta+Z%C5%82odziejska/@50.0544368,19.9337323,17.59z/data=!4m9!1m2!2m1!1swawel!3m5!1s0x47165b6d97535d45:0x10a11cb058374021!8m2!3d50.0535896!4d19.9337434!16s%2Fg%2F121fx494?hl=pl-PL&entry=ttu
+    route: 4
+    order: 2
+    description: Kolejne miejsce
     hero_story: Her story related to the castle or not. Her story related to the castle
       or not.Her story related to the castle or not.Her story related to the castle
       or not.Her story related to the castle or not.Her story related to the castle
       or not.Her story related to the castle or not.Her story related to the castle
       or not.
-    hero_quote: Come and hear my story!
+    hero_quote: Is this interesting?
     main_image: route_points/images/2023/09/30/p1.png
     audio: ''
 - model: routes.paragraph
@@ -37,17 +56,15 @@
   fields:
     order: 2
     route_point: 4
-    text: The castle is part of a fortified architectural complex erected atop a limestone
-      outcrop on the left bank of the Vistula River, at an altitude of 228 metres
-      above sea level.[3][4] The complex consists of numerous buildings of great historical
-      and national importance, including the Wawel Cathedral where Polish monarchs
-      were crowned and buried. Some of Wawel's oldest stone buildings can be traced
-      back to 970 AD, in addition to the earliest examples of Romanesque and Gothic
-      architecture in Poland.[5][6] The current castle was built in the 14th century,
-      and expanded over the next hundreds of years. In 1978 Wawel was declared the
-      first World Heritage Site as part of the Historic Centre of Kraków.
-    image: route_points/audio/2023/09/30/parag2.png
-    image_description: 'Podpis: tutaj jest taka rzecz2'
+    text: "The current castle was built in the 14th century, and expanded over the
+      next hundreds of years. \r\nIn the beginning of the 16th century King Sigismund
+      I the Old rebuild the royal residence int the Renaissance style. The complex
+      consists of numerous buildings of great historical and national importance,
+      including the Wawel Cathedral where Polish monarchs were crowned and buried.
+      In 1978 Wawel was declared the first World Heritage Site as part of the Historic
+      Centre of Kraków."
+    image: route_points/image/p1.png
+    image_description: Sigismund's Golden Chapel
 - model: routes.paragraph
   pk: 2
   fields:
@@ -60,5 +77,20 @@
       and enlarged over the centuries into a number of structures around an Italian-styled
       courtyard. It represents nearly all European architectural styles of the Medieval,
       Renaissance and Baroque periods.'
-    image: route_points/audio/2023/09/30/parag1.png
-    image_description: 'Podpis: tutaj jest taka rzecz1'
+    image: route_points/image/p2.png
+    image_description: Sigismund’s Tower and Kosciuszko Monument
+- model: routes.paragraph
+  pk: 3
+  fields:
+    order: 3
+    route_point: 4
+    text: Wawel Castle is now one of the country's premier art museums. Established
+      in 1930, the museum encompasses ten curatorial departments responsible for collections
+      of paintings, including an important collection of Italian Renaissance paintings,
+      prints, sculpture, textiles, among them the Sigismund II Augustus tapestry collection,
+      goldsmith's work, arms and armor, ceramics, Meissen porcelain, and period furniture.
+      The museum's holdings in oriental art include the largest collection of Ottoman
+      tents in Europe. Wawel Castle is the most visited art museum in the country
+      and the 22nd most visited art museum in the world.
+    image: ''
+    image_description: ''
