@@ -2,14 +2,14 @@
   pk: 1
   fields:
     name: Athena
-    image: https://s3-alpha-sig.figma.com/img/61de/020c/9e646f8adc7d6835e307258ac06b7805?Expires=1696809600&Signature=B5GAsfN8pOTzLptqZAIhZkoQjs4CgU79h4XVWObtK633b78pz9R1NsF93fmGv5Fy2cYRSFJu7idZz-jOFsU6weTrsoG~BUYvD1sEZJIYQ0TdzIjYmD150ApNq1plxFsWy2D8813gxwoSoQD0ySGPt24sY1msSREgsQ6nWIKYBLUYaUjbaIE97bTGa~b8WLLRlANdJE66j0jLmR5s2NHPYmKSFHIKTCCnGH7THqMmthEVIvtWzpZDX7P36gczAX0xozx9I8zjYoNsc8XT-pvMhn9SCcEUoR4wLelKgKTb3h0tTS6Oxiq9mXXHRCuEjGI4xlarDDkNlgh16uYT1pxdxg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    image: route_points/image/atena.png
 - model: routes.route
   pk: 4
   fields:
     city: 1
     name: Athena's journey
     description: Go on the adventure with the brave Athena and discover wonders of the Cracow Old Town.\n\nLet Athena tell you a story how she conquer the dragon and took the old town back for the Cracow residents or something.\n\nYou’ll see the old Royal Castle, beautiful Slowacki’s theatre, you’ll stroll through the main square gardens and many more!
-    image: https://s3-alpha-sig.figma.com/img/a564/b713/0893da39487d0c384d0b3db5b0cda6c2?Expires=1696809600&Signature=oCZGr9EQ7vH0lA-AKypzxkodb98LyyzMp~OUJFvfhkxw05AoHWdMjQNDoSUBskaXRKyZr5y~bX6wnPVLxd-Kx5dSErFrz0PAWcZQsjoKK-1WN0SdSpAN~4I~sXJvkicv9QH2l3DPmF4KihGZHRFFxd8fqklYeJWaALLHlbkfpsP0qzA4lzxEiI~l6RRW63sEhC4hVYGQm4ZHP52WmjMHZEe1AkGinMAC9WifYlkZgVhHhe0gju8PJMqLOHNmqoYpxOxua3mP8uAU~zf-AevWnNUP4p0iXzc707XmV9KfOwaUCdSMzNh9lxMcMeXgVLJgBGtqXPAF~ah2pMOFJVcyGg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    image: route/images/route1.png
     duration: 01:00:00
     route_type: historical
     hero: 1
@@ -31,7 +31,26 @@
       that time she helped a young cobbler, named Dratewka. A few years before, an
       old and nasty dragon had settled in the cave inside the Wawel Hill.
     hero_quote: Come and hear my story!
-    main_image: https://s3-alpha-sig.figma.com/img/f20b/3335/1c9b0709d0a3ac787eaca5e16efc0f53?Expires=1696809600&Signature=Q3W7XOex6GrkHTe2XwvXasIdCkufBgtnT0DVbm~H17f~qbf8EOpYX-ifrtZBA04U2PDzs92uIy92sUa-pAul~uC4xcNtCVGLJctqSNI-onOKLhO8fcCYRoa5u0cWPllKMcnXYzh50M1nmtoeU6kJnj7hQaW2jrhV7ua1t3w83KL-ZRUqFbxpixg1pZkek3f-Fgrv1PxJHB-pQtyjrglfZY6OcBKJp5NFAbIWuDer6dGBcgqT45JaznoYbq5SPp7tndPG2r6ovkJYIw5xM72jJRs~gHGVoPPG9O4FMRZps2ERh5Uubh7yfmKe6SLm2tnUAuB-f5nt~oaBR-797kd0uw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    main_image: route_points/images/route_point1.png
+    audio: ''
+- model: routes.routepoint
+  pk: 5
+  fields:
+    name: Second Point
+    longitude: '19.933732'
+    latitude: '50.054437'
+    short_description: Starting point
+    google_maps_url: https://www.google.com/maps/place/Baszta+Z%C5%82odziejska/@50.0544368,19.9337323,17.59z/data=!4m9!1m2!2m1!1swawel!3m5!1s0x47165b6d97535d45:0x10a11cb058374021!8m2!3d50.0535896!4d19.9337434!16s%2Fg%2F121fx494?hl=pl-PL&entry=ttu
+    route: 4
+    order: 2
+    description: Kolejne miejsce
+    hero_story: Her story related to the castle or not. Her story related to the castle
+      or not.Her story related to the castle or not.Her story related to the castle
+      or not.Her story related to the castle or not.Her story related to the castle
+      or not.Her story related to the castle or not.Her story related to the castle
+      or not.
+    hero_quote: Is this interesting?
+    main_image: route_points/images/2023/09/30/p1.png
     audio: ''
 - model: routes.paragraph
   pk: 2
@@ -59,7 +78,7 @@
       including the Wawel Cathedral where Polish monarchs were crowned and buried.
       In 1978 Wawel was declared the first World Heritage Site as part of the Historic
       Centre of Kraków."
-    image: https://s3-alpha-sig.figma.com/img/1b30/9397/0f604bad58df6eee65c6d28c083a8dec?Expires=1696809600&Signature=ebop3DBPsUjMWE0qffh8V5Xyjq49DCrTvU7PnHnkOfbnYluWizOjBBEtraB9zY0Zw2H0ezyNi5B1bfOghzV4frF0PACqWxsFqbc53BNbHt~8YGTTtp-oRPG~85cVq60klfjDMRJQW6iAmX-YXgOZDhl~QxXbX~9aJ8RhQuhzPkiCJlpnG6L5p0zRK1oa6xE~xQsaPGLyF9p1l-p7wbevQKxuhxmiQU77vNU2yioNnke5xoFtCWhi4J17bz8PXZafeY4dRmK6xLaDRYAYQKfXb6n6osqAFuQJpeSnBiBzLWMvrob78ZoKtGgZIwJrYwWmBwJV22JQEkVhvUazpb7wLQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4
+    image: route_points/image/p1.png
     image_description: Sigismund's Golden Chapel
 - model: routes.paragraph
   pk: 3
@@ -154,4 +173,3 @@
     text: The Veit Stoss Altarpiece is about 13 m high and 11 m wide when the panels of the triptych are completely opened. The realistically sculptured figures are 2.7 m, each one was carved out of a tree trunk of lime. Other parts of the altarpiece are made from oak wood, and the background is constructed of larch wood. When closed, the panels show 12 scenes of the life of Jesus and Mary.
     image: ''
     image_description: ''
-
