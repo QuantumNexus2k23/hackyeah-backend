@@ -5,13 +5,14 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import ReadOnlyModelViewSet
 
-from hackyeah.routes.models import City, Route, RoutePoint, RoutePointVisit, Hero
+from hackyeah.routes.models import City, Hero, Route, RoutePoint, RoutePointVisit
 from hackyeah.routes.serializers import (
     CitySerializer,
+    ComicsDownloadURLSerializer,
+    HeroSerializer,
     RoutePointSerializer,
     RoutePointVisitSerializer,
     RouteSerializer,
-    ComicsDownloadURLSerializer, HeroSerializer,
 )
 
 

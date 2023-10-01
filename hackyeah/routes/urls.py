@@ -2,8 +2,9 @@ from rest_framework import routers
 
 from hackyeah.routes.views import (
     CityModelViewSet,
+    HeroModelViewSet,
     RoutePointModelViewSet,
-    RoutesModelViewSet, HeroModelViewSet,
+    RoutesModelViewSet,
 )
 
 router = routers.DefaultRouter()

@@ -52,7 +52,7 @@ class BasePoint(models.Model):
     longitude = models.DecimalField(max_digits=9, decimal_places=6, blank=True)
     latitude = models.DecimalField(max_digits=9, decimal_places=6, blank=True)
     short_description = models.TextField(blank=True)
-    google_maps_url = models.URLField(max_length=255)
+    google_maps_url = models.URLField(max_length=1000)
 
     def __str__(self):
         return f"{self.name} ({self.latitude}, {self.longitude})"
@@ -82,7 +82,7 @@ class RoutePoint(BasePoint):
     description = models.TextField(blank=True)
     hero_story = models.TextField(blank=True)
     hero_quote = models.TextField(blank=True)
-    main_image = models.URLField(blank=True, null=True, max_length=1000)
+    main_image = models.ImageField(blank=True, null=True, max_length=1000)
     audio = models.FileField(
         upload_to=ROUTE_POINTS_AUDIO_UPLOAD_TO, blank=True, null=True
     )
