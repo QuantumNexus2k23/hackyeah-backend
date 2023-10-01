@@ -9,7 +9,7 @@
     city: 1
     name: Athena's journey
     description: Go on the adventure with the brave Athena and discover wonders of the Cracow Old Town.\n\nLet Athena tell you a story how she conquer the dragon and took the old town back for the Cracow residents or something.\n\nYou’ll see the old Royal Castle, beautiful Slowacki’s theatre, you’ll stroll through the main square gardens and many more!
-    image: route/athena1/route1.png
+    image: route/athena1/route1.jpg
     duration: 01:00:00
     route_type: historical
     hero: 1
@@ -31,7 +31,7 @@
       that time she helped a young cobbler, named Dratewka. A few years before, an
       old and nasty dragon had settled in the cave inside the Wawel Hill.
     hero_quote: Come and hear my story!
-    main_image: route/athena1/points/route_point4.png
+    main_image: route/athena1/points/route_point4.jpg
     audio: ''
 - model: routes.paragraph
   pk: 2
@@ -59,7 +59,7 @@
       including the Wawel Cathedral where Polish monarchs were crowned and buried.
       In 1978 Wawel was declared the first World Heritage Site as part of the Historic
       Centre of Kraków."
-    image: route/athena1/paragraphs/p1.png
+    image: route/athena1/paragraphs/p1.jpg
     image_description: Sigismund's Golden Chapel
 - model: routes.paragraph
   pk: 3
@@ -89,7 +89,7 @@
     description: Kolejne miejsce
     hero_story: Athena cares for the historical heritage. The city of Cracow is very old and has many underground layers as it turned out during renovation works. Objects like jewellery, coins and weapon are often found while digging. Athena came up with an idea and whispered it into the ears of architects and museum curators.
     hero_quote: Let's see!
-    main_image: route/athena1/points/route_point5.png
+    main_image: route/athena1/points/route_point5.jpg
     audio: ''
 - model: routes.paragraph
   pk: 4
@@ -97,7 +97,7 @@
     order: 1
     route_point: 5
     text: The Rynek Underground is one of the youngest Cracow’s museums. Modern and keeping up with the new standards, but perfectly recreating atmosphere of the city existing in the previous centuries. The main exhibit “In the Footsteps of Krakow’s European Identity” was launched three days after the museum's opening. It uses holograms constructed by using projectors, alongside fog machines and screens.
-    image: route/athena1/paragraphs/p4.png
+    image: route/athena1/paragraphs/p4.jpg
     image_description: Mariacki Church visible through celling window
 - model: routes.paragraph
   pk: 5
@@ -105,7 +105,7 @@
     order: 2
     route_point: 5
     text: The Rynek Underground exhibition presents not only Cracow’s rich history, but also the connections between the city and mediaeval Europe’s chief centres of trade and culture. Moreover, it portrays the significance of the capital of Poland in the operation of the Hanseatic League. The real historical objects on display, just to mention 14th-century coins, decorations, and pottery, are proof of the European cultural and trade exchange that continued here incessantly for hundreds of years.
-    image: route/athena1/paragraphs/p5.png
+    image: route/athena1/paragraphs/p5.jpg
     image_description: Rynek Underground Museum
 - model: routes.paragraph
   pk: 6
