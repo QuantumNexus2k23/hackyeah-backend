@@ -37,7 +37,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name="routepoint",
             name="google_maps_url",
-            field=models.URLField(max_length=255),
+            field=models.URLField(max_length=1000),
         ),
         migrations.AlterField(
             model_name="routepoint",

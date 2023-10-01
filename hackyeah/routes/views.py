@@ -5,20 +5,20 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import ReadOnlyModelViewSet
 
-from hackyeah.routes.models import City, Route, RoutePoint, RoutePointVisit
+from hackyeah.routes.models import City, Route, RoutePoint, RoutePointVisit, Hero
 from hackyeah.routes.serializers import (
     CitySerializer,
     RoutePointSerializer,
     RoutePointVisitSerializer,
     RouteSerializer,
-    ComicsDownloadURLSerializer,
+    ComicsDownloadURLSerializer, HeroSerializer,
 )
 
 
 class RoutesModelViewSet(ReadOnlyModelViewSet):
     serializer_class = RouteSerializer
     queryset = Route.objects.all()
-    filterset_fields = ("city_id",)
+    filterset_fields = ["city_id", "hero_id"]
 
     def get_permissions(self):
         if self.action in ["visit", "clean_progress"]:
@@ -72,3 +72,8 @@ class RoutePointModelViewSet(ReadOnlyModelViewSet):
 class CityModelViewSet(ReadOnlyModelViewSet):
     serializer_class = CitySerializer
     queryset = City.objects.all()
+
+
+class HeroModelViewSet(ReadOnlyModelViewSet):
+    serializer_class = HeroSerializer
+    queryset = Hero.objects.all()
